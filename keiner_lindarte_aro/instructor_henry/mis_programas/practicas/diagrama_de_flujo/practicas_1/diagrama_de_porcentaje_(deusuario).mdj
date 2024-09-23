@@ -1,0 +1,802 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true
+				}
+			]
+		},
+		{
+			"_type": "FCFlowchart",
+			"_id": "AAAAAAGPgyZ2C88ZTw8=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Flowchart2",
+			"ownedElements": [
+				{
+					"_type": "FCFlowchartDiagram",
+					"_id": "AAAAAAGPgyZ2C88aJcA=",
+					"_parent": {
+						"$ref": "AAAAAAGPgyZ2C88ZTw8="
+					},
+					"name": "FlowchartDiagram1",
+					"ownedViews": [
+						{
+							"_type": "FCTerminatorView",
+							"_id": "AAAAAAGPgybNws8glEk=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgybNwc8ek3w="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGPgybNws8hodQ=",
+									"_parent": {
+										"$ref": "AAAAAAGPgybNws8glEk="
+									},
+									"font": "Arial;13;0",
+									"left": 274,
+									"top": 66,
+									"width": 148,
+									"height": 13,
+									"text": "inicio",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 264,
+							"top": 56,
+							"width": 168,
+							"height": 56,
+							"nameLabel": {
+								"$ref": "AAAAAAGPgybNws8hodQ="
+							}
+						},
+						{
+							"_type": "FCTerminatorView",
+							"_id": "AAAAAAGPgybYus8oa0w=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgybYuc8mMag="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGPgybYus8pAS4=",
+									"_parent": {
+										"$ref": "AAAAAAGPgybYus8oa0w="
+									},
+									"font": "Arial;13;0",
+									"left": 290,
+									"top": 562,
+									"width": 148,
+									"height": 13,
+									"text": "final",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 280,
+							"top": 552,
+							"width": 168,
+							"height": 48,
+							"nameLabel": {
+								"$ref": "AAAAAAGPgybYus8pAS4="
+							}
+						},
+						{
+							"_type": "FCDisplayView",
+							"_id": "AAAAAAGPgydQKc82F58=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgydQKc80lvo="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGPgydQKc83fc8=",
+									"_parent": {
+										"$ref": "AAAAAAGPgydQKc82F58="
+									},
+									"font": "Arial;13;0",
+									"left": 187,
+									"top": 146,
+									"width": 306,
+									"height": 26,
+									"text": "'Ponga la informacion requerida para poder sacarle su porcentaje'",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 96,
+							"top": 136,
+							"width": 488,
+							"height": 46,
+							"nameLabel": {
+								"$ref": "AAAAAAGPgydQKc83fc8="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGPgyuzU89/Xl4=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgyuzU899mXQ="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGPgyuzU8+AGpY=",
+									"_parent": {
+										"$ref": "AAAAAAGPgyuzU89/Xl4="
+									},
+									"font": "Arial;13;0",
+									"left": 226,
+									"top": 426,
+									"width": 268,
+									"height": 13,
+									"text": "resultado: sumatotal / 100",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 216,
+							"top": 416,
+							"width": 288,
+							"height": 40,
+							"nameLabel": {
+								"$ref": "AAAAAAGPgyuzU8+AGpY="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGPgyyURs+On+Y=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgyyURs+MEyo="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGPgyyURs+P/G0=",
+									"_parent": {
+										"$ref": "AAAAAAGPgyyURs+On+Y="
+									},
+									"font": "Arial;13;0",
+									"left": 234,
+									"top": 378,
+									"width": 252,
+									"height": 13,
+									"text": "sumatotal = usernumber * userporcent",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 224,
+							"top": 368,
+							"width": 272,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGPgyyURs+P/G0="
+							}
+						},
+						{
+							"_type": "FCDisplayView",
+							"_id": "AAAAAAGPgy1nds+eiSc=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgy1nds+cWZM="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGPgy1nds+fNhQ=",
+									"_parent": {
+										"$ref": "AAAAAAGPgy1nds+eiSc="
+									},
+									"font": "Arial;13;0",
+									"left": 220,
+									"top": 490,
+									"width": 280,
+									"height": 13,
+									"text": "'El resultado de este porcentaje es (resultado)%'",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 136,
+							"top": 480,
+							"width": 448,
+							"height": 46,
+							"nameLabel": {
+								"$ref": "AAAAAAGPgy1nds+fNhQ="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGPgy5Tjs+uWG8=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgy5Tjc+stvQ="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGPgy5Tjs+v534=",
+									"_parent": {
+										"$ref": "AAAAAAGPgy5Tjs+uWG8="
+									},
+									"model": {
+										"$ref": "AAAAAAGPgy5Tjc+stvQ="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 359,
+									"top": 117,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGPgy5Tjs+uWG8="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGPgydQKc82F58="
+							},
+							"tail": {
+								"$ref": "AAAAAAGPgybNws8glEk="
+							},
+							"lineStyle": 2,
+							"points": "345:112;345:136",
+							"nameLabel": {
+								"$ref": "AAAAAAGPgy5Tjs+v534="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGPgy5w/s/k9QY=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgy5w/s/i5XI="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGPgy5w/8/lNsA=",
+									"_parent": {
+										"$ref": "AAAAAAGPgy5w/s/k9QY="
+									},
+									"model": {
+										"$ref": "AAAAAAGPgy5w/s/i5XI="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 374,
+									"top": 401,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGPgy5w/s/k9QY="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGPgyuzU89/Xl4="
+							},
+							"tail": {
+								"$ref": "AAAAAAGPgyyURs+On+Y="
+							},
+							"lineStyle": 2,
+							"points": "360:401;360:416",
+							"nameLabel": {
+								"$ref": "AAAAAAGPgy5w/8/lNsA="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGPgy51Dc/tQTU=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgy51Dc/rWhE="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGPgy51Dc/uWGA=",
+									"_parent": {
+										"$ref": "AAAAAAGPgy51Dc/tQTU="
+									},
+									"model": {
+										"$ref": "AAAAAAGPgy51Dc/rWhE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 374,
+									"top": 461,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGPgy51Dc/tQTU="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGPgy1nds+eiSc="
+							},
+							"tail": {
+								"$ref": "AAAAAAGPgyuzU89/Xl4="
+							},
+							"lineStyle": 2,
+							"points": "360:456;360:480",
+							"nameLabel": {
+								"$ref": "AAAAAAGPgy51Dc/uWGA="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGPgy6z9dAXcKI=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPgy6z9dAVY80="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGPgy6z9dAYUcQ=",
+									"_parent": {
+										"$ref": "AAAAAAGPgy6z9dAXcKI="
+									},
+									"model": {
+										"$ref": "AAAAAAGPgy6z9dAVY80="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 375,
+									"top": 532,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGPgy6z9dAXcKI="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGPgybYus8oa0w="
+							},
+							"tail": {
+								"$ref": "AAAAAAGPgy1nds+eiSc="
+							},
+							"lineStyle": 2,
+							"points": "361:526;361:552",
+							"nameLabel": {
+								"$ref": "AAAAAAGPgy6z9dAYUcQ="
+							}
+						},
+						{
+							"_type": "FCManualInputView",
+							"_id": "AAAAAAGPwjrQ0spjJlU=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPwjrQ0cphiLo="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGPwjrQ0spkxII=",
+									"_parent": {
+										"$ref": "AAAAAAGPwjrQ0spjJlU="
+									},
+									"font": "Arial;13;0",
+									"left": 162,
+									"top": 234,
+									"width": 380,
+									"height": 20,
+									"text": "'Ponga un numero para sacarle el porcentaje:' , usernumber",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 152,
+							"top": 216,
+							"width": 400,
+							"height": 48,
+							"nameLabel": {
+								"$ref": "AAAAAAGPwjrQ0spkxII="
+							}
+						},
+						{
+							"_type": "FCManualInputView",
+							"_id": "AAAAAAGPwjs1gcqHwLk=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPwjs1gcqFg5s="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGPwjs1gsqITN0=",
+									"_parent": {
+										"$ref": "AAAAAAGPwjs1gcqHwLk="
+									},
+									"font": "Arial;13;0",
+									"left": 170,
+									"top": 311,
+									"width": 364,
+									"height": 8,
+									"text": "'Que porcentaje quiere sacar:', userporcent",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 160,
+							"top": 296,
+							"width": 384,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGPwjs1gsqITN0="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGPwjuIisqZ6BE=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPwjuIicqXT5M="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGPwjuIisqaB1E=",
+									"_parent": {
+										"$ref": "AAAAAAGPwjuIisqZ6BE="
+									},
+									"model": {
+										"$ref": "AAAAAAGPwjuIicqXT5M="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 357,
+									"top": 192,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGPwjuIisqZ6BE="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGPwjrQ0spjJlU="
+							},
+							"tail": {
+								"$ref": "AAAAAAGPgydQKc82F58="
+							},
+							"lineStyle": 2,
+							"points": "343:182;343:216",
+							"nameLabel": {
+								"$ref": "AAAAAAGPwjuIisqaB1E="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGPwjuVyMqi/JQ=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPwjuVx8qg6Wg="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGPwjuVyMqj1oc=",
+									"_parent": {
+										"$ref": "AAAAAAGPwjuVyMqi/JQ="
+									},
+									"model": {
+										"$ref": "AAAAAAGPwjuVx8qg6Wg="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 366,
+									"top": 273,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGPwjuVyMqi/JQ="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGPwjs1gcqHwLk="
+							},
+							"tail": {
+								"$ref": "AAAAAAGPwjrQ0spjJlU="
+							},
+							"lineStyle": 2,
+							"points": "352:264;352:296",
+							"nameLabel": {
+								"$ref": "AAAAAAGPwjuVyMqj1oc="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGPwjuaYsqrNeM=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyZ2C88aJcA="
+							},
+							"model": {
+								"$ref": "AAAAAAGPwjuaYsqpq1w="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGPwjuaYsqsKe4=",
+									"_parent": {
+										"$ref": "AAAAAAGPwjuaYsqrNeM="
+									},
+									"model": {
+										"$ref": "AAAAAAGPwjuaYsqpq1w="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 368,
+									"top": 341,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGPwjuaYsqrNeM="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGPgyyURs+On+Y="
+							},
+							"tail": {
+								"$ref": "AAAAAAGPwjs1gcqHwLk="
+							},
+							"lineStyle": 2,
+							"points": "354:329;354:368",
+							"nameLabel": {
+								"$ref": "AAAAAAGPwjuaYsqsKe4="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCTerminator",
+					"_id": "AAAAAAGPgybNwc8ek3w=",
+					"_parent": {
+						"$ref": "AAAAAAGPgyZ2C88ZTw8="
+					},
+					"name": "inicio",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGPgy5Tjc+stvQ=",
+							"_parent": {
+								"$ref": "AAAAAAGPgybNwc8ek3w="
+							},
+							"source": {
+								"$ref": "AAAAAAGPgybNwc8ek3w="
+							},
+							"target": {
+								"$ref": "AAAAAAGPgydQKc80lvo="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCTerminator",
+					"_id": "AAAAAAGPgybYuc8mMag=",
+					"_parent": {
+						"$ref": "AAAAAAGPgyZ2C88ZTw8="
+					},
+					"name": "final"
+				},
+				{
+					"_type": "FCDisplay",
+					"_id": "AAAAAAGPgydQKc80lvo=",
+					"_parent": {
+						"$ref": "AAAAAAGPgyZ2C88ZTw8="
+					},
+					"name": "'Ponga la informacion requerida para poder sacarle su porcentaje'",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGPwjuIicqXT5M=",
+							"_parent": {
+								"$ref": "AAAAAAGPgydQKc80lvo="
+							},
+							"source": {
+								"$ref": "AAAAAAGPgydQKc80lvo="
+							},
+							"target": {
+								"$ref": "AAAAAAGPwjrQ0cphiLo="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGPgyuzU899mXQ=",
+					"_parent": {
+						"$ref": "AAAAAAGPgyZ2C88ZTw8="
+					},
+					"name": "resultado: sumatotal / 100",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGPgy51Dc/rWhE=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyuzU899mXQ="
+							},
+							"source": {
+								"$ref": "AAAAAAGPgyuzU899mXQ="
+							},
+							"target": {
+								"$ref": "AAAAAAGPgy1nds+cWZM="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGPgyyURs+MEyo=",
+					"_parent": {
+						"$ref": "AAAAAAGPgyZ2C88ZTw8="
+					},
+					"name": "sumatotal = usernumber * userporcent",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGPgy5w/s/i5XI=",
+							"_parent": {
+								"$ref": "AAAAAAGPgyyURs+MEyo="
+							},
+							"source": {
+								"$ref": "AAAAAAGPgyyURs+MEyo="
+							},
+							"target": {
+								"$ref": "AAAAAAGPgyuzU899mXQ="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDisplay",
+					"_id": "AAAAAAGPgy1nds+cWZM=",
+					"_parent": {
+						"$ref": "AAAAAAGPgyZ2C88ZTw8="
+					},
+					"name": "'El resultado de este porcentaje es (resultado)%'",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGPgy6z9dAVY80=",
+							"_parent": {
+								"$ref": "AAAAAAGPgy1nds+cWZM="
+							},
+							"source": {
+								"$ref": "AAAAAAGPgy1nds+cWZM="
+							},
+							"target": {
+								"$ref": "AAAAAAGPgybYuc8mMag="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCManualInput",
+					"_id": "AAAAAAGPwjrQ0cphiLo=",
+					"_parent": {
+						"$ref": "AAAAAAGPgyZ2C88ZTw8="
+					},
+					"name": "'Ponga un numero para sacarle el porcentaje:' , usernumber",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGPwjuVx8qg6Wg=",
+							"_parent": {
+								"$ref": "AAAAAAGPwjrQ0cphiLo="
+							},
+							"source": {
+								"$ref": "AAAAAAGPwjrQ0cphiLo="
+							},
+							"target": {
+								"$ref": "AAAAAAGPwjs1gcqFg5s="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCManualInput",
+					"_id": "AAAAAAGPwjs1gcqFg5s=",
+					"_parent": {
+						"$ref": "AAAAAAGPgyZ2C88ZTw8="
+					},
+					"name": "'Que porcentaje quiere sacar:', userporcent",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGPwjuaYsqpq1w=",
+							"_parent": {
+								"$ref": "AAAAAAGPwjs1gcqFg5s="
+							},
+							"source": {
+								"$ref": "AAAAAAGPwjs1gcqFg5s="
+							},
+							"target": {
+								"$ref": "AAAAAAGPgyyURs+MEyo="
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

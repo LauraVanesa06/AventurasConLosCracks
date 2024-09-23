@@ -1,0 +1,895 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "Untitled",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLClassDiagram",
+					"_id": "AAAAAAFF+qBtyKM79qY=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Main",
+					"defaultDiagram": true,
+					"ownedViews": [
+						{
+							"_type": "UMLClassView",
+							"_id": "AAAAAAGRGtJljVXC51Q=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGtJlilXASd0="
+							},
+							"subViews": [
+								{
+									"_type": "UMLNameCompartmentView",
+									"_id": "AAAAAAGRGtJljVXDEb4=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtJljVXC51Q="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGtJlilXASd0="
+									},
+									"subViews": [
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGRGtJljVXEk3s=",
+											"_parent": {
+												"$ref": "AAAAAAGRGtJljVXDEb4="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGRGtJljlXFHUA=",
+											"_parent": {
+												"$ref": "AAAAAAGRGtJljVXDEb4="
+											},
+											"font": "Arial;13;1",
+											"left": 237,
+											"top": 63,
+											"width": 187.087890625,
+											"height": 13,
+											"text": "Videojuego"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGRGtJljlXGfi0=",
+											"_parent": {
+												"$ref": "AAAAAAGRGtJljVXDEb4="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"width": 73.67724609375,
+											"height": 13,
+											"text": "(from Model)"
+										},
+										{
+											"_type": "LabelView",
+											"_id": "AAAAAAGRGtJljlXHxsc=",
+											"_parent": {
+												"$ref": "AAAAAAGRGtJljVXDEb4="
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"height": 13,
+											"horizontalAlignment": 1
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 232,
+									"top": 56,
+									"width": 197.087890625,
+									"height": 25,
+									"stereotypeLabel": {
+										"$ref": "AAAAAAGRGtJljVXEk3s="
+									},
+									"nameLabel": {
+										"$ref": "AAAAAAGRGtJljlXFHUA="
+									},
+									"namespaceLabel": {
+										"$ref": "AAAAAAGRGtJljlXGfi0="
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGRGtJljlXHxsc="
+									}
+								},
+								{
+									"_type": "UMLAttributeCompartmentView",
+									"_id": "AAAAAAGRGtJljlXIlGs=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtJljVXC51Q="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGtJlilXASd0="
+									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGRGtKd4VXuLJ8=",
+											"_parent": {
+												"$ref": "AAAAAAGRGtJljlXIlGs="
+											},
+											"model": {
+												"$ref": "AAAAAAGRGtKd0FXrImY="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 86,
+											"width": 187.087890625,
+											"height": 13,
+											"text": "+empresa: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGRGtOJ81X8+uw=",
+											"_parent": {
+												"$ref": "AAAAAAGRGtJljlXIlGs="
+											},
+											"model": {
+												"$ref": "AAAAAAGRGtOJ51X5lIw="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 101,
+											"width": 187.087890625,
+											"height": 13,
+											"text": "+genero: String",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGRGuDu1Md2Jhg=",
+											"_parent": {
+												"$ref": "AAAAAAGRGtJljlXIlGs="
+											},
+											"model": {
+												"$ref": "AAAAAAGRGuDuwMdzgFw="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 116,
+											"width": 187.087890625,
+											"height": 13,
+											"text": "+plataformas: String",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 232,
+									"top": 81,
+									"width": 197.087890625,
+									"height": 53
+								},
+								{
+									"_type": "UMLOperationCompartmentView",
+									"_id": "AAAAAAGRGtJljlXJBnc=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtJljVXC51Q="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGtJlilXASd0="
+									},
+									"subViews": [
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAGRGtPrelYG05Q=",
+											"_parent": {
+												"$ref": "AAAAAAGRGtJljlXJBnc="
+											},
+											"model": {
+												"$ref": "AAAAAAGRGtPrblYD+SQ="
+											},
+											"font": "Arial;13;0",
+											"left": 237,
+											"top": 139,
+											"width": 187.087890625,
+											"height": 13,
+											"text": "+Videojuego(empresa)",
+											"horizontalAlignment": 0
+										}
+									],
+									"font": "Arial;13;0",
+									"left": 232,
+									"top": 134,
+									"width": 197.087890625,
+									"height": 23
+								},
+								{
+									"_type": "UMLReceptionCompartmentView",
+									"_id": "AAAAAAGRGtJlj1XKMzs=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtJljVXC51Q="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGtJlilXASd0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								},
+								{
+									"_type": "UMLTemplateParameterCompartmentView",
+									"_id": "AAAAAAGRGtJlj1XLFVY=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtJljVXC51Q="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGtJlilXASd0="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"width": 10,
+									"height": 10
+								}
+							],
+							"font": "Arial;13;0",
+							"containerChangeable": true,
+							"left": 232,
+							"top": 56,
+							"width": 196.087890625,
+							"height": 101,
+							"nameCompartment": {
+								"$ref": "AAAAAAGRGtJljVXDEb4="
+							},
+							"attributeCompartment": {
+								"$ref": "AAAAAAGRGtJljlXIlGs="
+							},
+							"operationCompartment": {
+								"$ref": "AAAAAAGRGtJljlXJBnc="
+							},
+							"receptionCompartment": {
+								"$ref": "AAAAAAGRGtJlj1XKMzs="
+							},
+							"templateParameterCompartment": {
+								"$ref": "AAAAAAGRGtJlj1XLFVY="
+							}
+						}
+					]
+				},
+				{
+					"_type": "UMLClass",
+					"_id": "AAAAAAGRGtJlilXASd0=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Videojuego",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGRGtKd0FXrImY=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtJlilXASd0="
+							},
+							"name": "empresa",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGRGtOJ51X5lIw=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtJlilXASd0="
+							},
+							"name": "genero",
+							"type": "String"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGRGuDuwMdzgFw=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtJlilXASd0="
+							},
+							"name": "plataformas",
+							"type": "String"
+						}
+					],
+					"operations": [
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAGRGtPrblYD+SQ=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtJlilXASd0="
+							},
+							"name": "Videojuego",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAGRGtRtN1YKXEI=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtPrblYD+SQ="
+									},
+									"name": "empresa"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"_type": "FCFlowchart",
+			"_id": "AAAAAAGRGtW4+lY9Ul4=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Flowchart1",
+			"ownedElements": [
+				{
+					"_type": "FCFlowchartDiagram",
+					"_id": "AAAAAAGRGtW4+lY+PG0=",
+					"_parent": {
+						"$ref": "AAAAAAGRGtW4+lY9Ul4="
+					},
+					"name": "FlowchartDiagram1",
+					"ownedViews": [
+						{
+							"_type": "FCTerminatorView",
+							"_id": "AAAAAAGRGtXh3lZEQ8o=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGtXh3lZCwwU="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGRGtXh31ZFoVc=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtXh3lZEQ8o="
+									},
+									"font": "Arial;13;0",
+									"left": 466,
+									"top": 42,
+									"width": 68.63720703125,
+									"height": 13,
+									"text": "inicio",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 456,
+							"top": 32,
+							"width": 88.63720703125,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGRGtXh31ZFoVc="
+							}
+						},
+						{
+							"_type": "FCTerminatorView",
+							"_id": "AAAAAAGRGtX1tlZNaUY=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGtX1tlZLdA4="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGRGtX1tlZOQng=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtX1tlZNaUY="
+									},
+									"font": "Arial;13;0",
+									"left": 482,
+									"top": 378,
+									"width": 68.63720703125,
+									"height": 13,
+									"text": "final",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 472,
+							"top": 368,
+							"width": 88.63720703125,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGRGtX1tlZOQng="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGRGtrRJFZaMB4=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGtrRJFZY/qY="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGRGtrRJFZbABk=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtrRJFZaMB4="
+									},
+									"font": "Arial;13;0",
+									"left": 378,
+									"top": 98,
+									"width": 260,
+									"height": 13,
+									"text": "zelda = new Videojuego(\"nintendo\")",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 368,
+							"top": 88,
+							"width": 280,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGRGtrRJFZbABk="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGRGtv57FZx61A=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGtv561Zvw6A="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGRGtv57FZytwc=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtv57FZx61A="
+									},
+									"font": "Arial;13;0",
+									"left": 426,
+									"top": 146,
+									"width": 164,
+									"height": 13,
+									"text": "zelda.genero = \"aventura\"",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 416,
+							"top": 136,
+							"width": 184,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGRGtv57FZytwc="
+							}
+						},
+						{
+							"_type": "FCProcessView",
+							"_id": "AAAAAAGRGtwUslZ6tWY=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGtwUslZ4lKI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGRGtwUslZ7Iug=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtwUslZ6tWY="
+									},
+									"font": "Arial;13;0",
+									"left": 378,
+									"top": 202,
+									"width": 260,
+									"height": 13,
+									"text": "zelda.plataformas = \"playstation, xbox y pc\"",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 368,
+							"top": 192,
+							"width": 280,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGRGtwUslZ7Iug="
+							}
+						},
+						{
+							"_type": "FCDisplayView",
+							"_id": "AAAAAAGRGtyFgFaKU8o=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGtyFgFaI/tE="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGRGtyFgVaLx04=",
+									"_parent": {
+										"$ref": "AAAAAAGRGtyFgFaKU8o="
+									},
+									"font": "Arial;13;0",
+									"left": 292,
+									"top": 274,
+									"width": 472,
+									"height": 26,
+									"text": "\"la empresa \" +zelda.empresa+ \" creo un juego con el genero \" +zelda.genero+ \" para las plataformas\" +zelda.plataformas",
+									"wordWrap": true
+								}
+							],
+							"font": "Arial;13;0",
+							"left": 160,
+							"top": 264,
+							"width": 736,
+							"height": 46,
+							"nameLabel": {
+								"$ref": "AAAAAAGRGtyFgVaLx04="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGRGt2R1laaBxI=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGt2R1VaY/+I="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGRGt2R1labNG0=",
+									"_parent": {
+										"$ref": "AAAAAAGRGt2R1laaBxI="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGt2R1VaY/+I="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 516,
+									"top": 69,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGRGt2R1laaBxI="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGRGtrRJFZaMB4="
+							},
+							"tail": {
+								"$ref": "AAAAAAGRGtXh3lZEQ8o="
+							},
+							"lineStyle": 2,
+							"points": "502:65;502:88",
+							"nameLabel": {
+								"$ref": "AAAAAAGRGt2R1labNG0="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGRGt2WDlajrlM=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGt2WDlah86g="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGRGt2WDlakOZ4=",
+									"_parent": {
+										"$ref": "AAAAAAGRGt2WDlajrlM="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGt2WDlah86g="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 522,
+									"top": 121,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGRGt2WDlajrlM="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGRGtv57FZx61A="
+							},
+							"tail": {
+								"$ref": "AAAAAAGRGtrRJFZaMB4="
+							},
+							"lineStyle": 2,
+							"points": "508:121;508:136",
+							"nameLabel": {
+								"$ref": "AAAAAAGRGt2WDlakOZ4="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGRGt2ZVVasAXo=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGt2ZVVaqbvo="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGRGt2ZVVat+TA=",
+									"_parent": {
+										"$ref": "AAAAAAGRGt2ZVVasAXo="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGt2ZVVaqbvo="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 522,
+									"top": 173,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGRGt2ZVVasAXo="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGRGtwUslZ6tWY="
+							},
+							"tail": {
+								"$ref": "AAAAAAGRGtv57FZx61A="
+							},
+							"lineStyle": 2,
+							"points": "508:169;508:192",
+							"nameLabel": {
+								"$ref": "AAAAAAGRGt2ZVVat+TA="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGRGt2c7la17+g=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGt2c7Vaz4zM="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGRGt2c7la22+I=",
+									"_parent": {
+										"$ref": "AAAAAAGRGt2c7la17+g="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGt2c7Vaz4zM="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 526,
+									"top": 237,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGRGt2c7la17+g="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGRGtyFgFaKU8o="
+							},
+							"tail": {
+								"$ref": "AAAAAAGRGtwUslZ6tWY="
+							},
+							"lineStyle": 2,
+							"points": "512:225;512:264",
+							"nameLabel": {
+								"$ref": "AAAAAAGRGt2c7la22+I="
+							}
+						},
+						{
+							"_type": "FCFlowView",
+							"_id": "AAAAAAGRGt2hDVa+hbc=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtW4+lY+PG0="
+							},
+							"model": {
+								"$ref": "AAAAAAGRGt2hDVa85aE="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGRGt2hDVa/sC8=",
+									"_parent": {
+										"$ref": "AAAAAAGRGt2hDVa+hbc="
+									},
+									"model": {
+										"$ref": "AAAAAAGRGt2hDVa85aE="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 539,
+									"top": 332,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGRGt2hDVa+hbc="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGRGtX1tlZNaUY="
+							},
+							"tail": {
+								"$ref": "AAAAAAGRGtyFgFaKU8o="
+							},
+							"lineStyle": 2,
+							"points": "525:310;525:368",
+							"nameLabel": {
+								"$ref": "AAAAAAGRGt2hDVa/sC8="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCTerminator",
+					"_id": "AAAAAAGRGtXh3lZCwwU=",
+					"_parent": {
+						"$ref": "AAAAAAGRGtW4+lY9Ul4="
+					},
+					"name": "inicio",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGRGt2R1VaY/+I=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtXh3lZCwwU="
+							},
+							"source": {
+								"$ref": "AAAAAAGRGtXh3lZCwwU="
+							},
+							"target": {
+								"$ref": "AAAAAAGRGtrRJFZY/qY="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCTerminator",
+					"_id": "AAAAAAGRGtX1tlZLdA4=",
+					"_parent": {
+						"$ref": "AAAAAAGRGtW4+lY9Ul4="
+					},
+					"name": "final"
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGRGtrRJFZY/qY=",
+					"_parent": {
+						"$ref": "AAAAAAGRGtW4+lY9Ul4="
+					},
+					"name": "zelda = new Videojuego(\"nintendo\")",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGRGt2WDlah86g=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtrRJFZY/qY="
+							},
+							"source": {
+								"$ref": "AAAAAAGRGtrRJFZY/qY="
+							},
+							"target": {
+								"$ref": "AAAAAAGRGtv561Zvw6A="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGRGtv561Zvw6A=",
+					"_parent": {
+						"$ref": "AAAAAAGRGtW4+lY9Ul4="
+					},
+					"name": "zelda.genero = \"aventura\"",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGRGt2ZVVaqbvo=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtv561Zvw6A="
+							},
+							"source": {
+								"$ref": "AAAAAAGRGtv561Zvw6A="
+							},
+							"target": {
+								"$ref": "AAAAAAGRGtwUslZ4lKI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCProcess",
+					"_id": "AAAAAAGRGtwUslZ4lKI=",
+					"_parent": {
+						"$ref": "AAAAAAGRGtW4+lY9Ul4="
+					},
+					"name": "zelda.plataformas = \"playstation, xbox y pc\"",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGRGt2c7Vaz4zM=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtwUslZ4lKI="
+							},
+							"source": {
+								"$ref": "AAAAAAGRGtwUslZ4lKI="
+							},
+							"target": {
+								"$ref": "AAAAAAGRGtyFgFaI/tE="
+							}
+						}
+					]
+				},
+				{
+					"_type": "FCDisplay",
+					"_id": "AAAAAAGRGtyFgFaI/tE=",
+					"_parent": {
+						"$ref": "AAAAAAGRGtW4+lY9Ul4="
+					},
+					"name": "\"la empresa \" +zelda.empresa+ \" creo un juego con el genero \" +zelda.genero+ \" para las plataformas\" +zelda.plataformas",
+					"ownedElements": [
+						{
+							"_type": "FCFlow",
+							"_id": "AAAAAAGRGt2hDVa85aE=",
+							"_parent": {
+								"$ref": "AAAAAAGRGtyFgFaI/tE="
+							},
+							"source": {
+								"$ref": "AAAAAAGRGtyFgFaI/tE="
+							},
+							"target": {
+								"$ref": "AAAAAAGRGtX1tlZLdA4="
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,64 @@
+.Background{
+    background-color:rgba(0, 0, 0, 0.527);
+    background-image: url(/ADSO2928707/portafolio_aprendices/keiner_lindarte_aro/instructor_henry/mis_programas/practicas/html_css/img/michael_jackson/background_img.jpg);
+    background-size: 3000px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.Inicio{
+    text-align: center;
+}
+.titulo_inicio{
+    border: solid 5px; border-radius: 30px; 
+    margin: 80px 350px 80px 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.568);
+}
+.img_inicio{
+    border: solid 3px; 
+    border-radius: 10px;
+}
+
+
+
+.Texto1{
+    border: solid 5px; 
+    border-radius: 20px; 
+    margin: 80px 320px 80px 320px; 
+    padding: 2px 20px 2px 20px; 
+    background-color: rgba(192, 191, 191, 0.521);
+}
+.titulo_texto1{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.671);
+    border-radius: 30px;
+}
+.titulos_pequenos_texto1{
+    color: rgba(255, 255, 255, 0.774);
+    padding: 1px;
+}
+
+
+
+.Texto2{
+    border: solid 5px;
+    border-radius: 20px; 
+    text-align: left;
+    padding: 2px 20px 2px 20px;
+    background-color: rgba(192, 191, 191, 0.521);
+}
+.titulo_texto2{
+    text-align: center;
+    margin-right: 1020px;
+    margin-left: 0px;
+    background-color: rgba(255, 255, 255, 0.671);
+    border: solid 3px;
+    border-radius: 30px;
+    padding: 10px;
+}
+.img_texto2{
+    border: solid 3px;
+    border-radius: 10px;
+}

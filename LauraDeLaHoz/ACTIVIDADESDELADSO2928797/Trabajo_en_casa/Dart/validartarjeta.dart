@@ -2,7 +2,7 @@
 2. multiplicar por 2 cada segundo digito empezando por el primero, si da un uumero de 2 digitos se suman.
 3. se suman todos los digitos y es valido si termina en cero.
 */
-
+/*
 import 'dart:io';
 import 'dart:core';
 class Validar{
@@ -36,3 +36,5 @@ int numTarjeta = int.parse(stdin.readLineSync()!);
 Validar num1 = Validar(numTarjeta);
 
 }
+
+*/

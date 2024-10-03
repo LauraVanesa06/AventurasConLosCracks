@@ -5,15 +5,16 @@ void main() async {
   var url = Uri.https('jsonplaceholder.typicode.com', 'users/1');
   var response = await http.get(url);
   
- // String json = response.body;
   
- // User a = User(json);
-  
- // print("name: ${a.name}");
- // Company b = new Company(json);
- // print("name: ${b.catchPhrase}");
-
-  print("name: ${response.body}");
+  User user = User(response.body);
+  print("id: ${user.id}");
+  print("name: ${user.name}");
+  print("username: ${user.username}");
+  print("email: ${user.email}");
+  print("address: ${user.address}");
+  print("phone: ${user.phone}");
+  print("website: ${user.website}");
+  print("company: ${user.company}");
 }
 
 
@@ -22,30 +23,45 @@ class Company{
   String? catchPhrase;
   String? bs;
   
-  Company(String jsonString){
-      Map<String, dynamic> map = jsonDecode(jsonString);
-      this.name = map["name"];
-      this.catchPhrase = map["catchPhrase"];
-      this.bs = map["bs"];
-      
+  Company(Map company){
+      this.name = company["name"];
+      this.catchPhrase = company["catchPhrase"];
+      this.bs = company["bs"];
     }
+  String toString(){
+    return '["name": "${name}", "catchPhrase": "${catchPhrase}", "bs": "${bs}"]';
+  }
 }
 class Address{
   String? street;
   String? suite;
   String? city;
+  String? zipcode;
   Geo? geo;
   
   Address(Map address){
     this.street = address["street"];
     this.suite = address["suite"];
     this.city = address["city"];
-  //  this.geo = new Geo(address["geo"]);
+    this.zipcode = address["zipcode"];
+    this.geo = new Geo(address["geo"]);
+  }
+  String toString(){
+    return '["city": "${city}", "suite": "${suite}", "city": "${city}", "zipcode": "${zipcode}", "geo": "${geo}"]';
   }
 }
 class Geo{
-  int? lat;
-  int? lng;
+  String? lat;
+  String? lng;
+  
+  Geo(Map geo){
+    this.lat = geo["lat"];
+    this.lng = geo["lng"];
+  }
+  
+  String toString(){
+    return '"geo": ["lat": "${lat}", "lng": "${lng}"]';
+  }
 }
 class User{
   
@@ -55,7 +71,7 @@ class User{
   String? email;
   Address? address;
   String? website;
-  int? phone;
+  String? phone;
   Company? company;
   
   User(String jsonString){
@@ -67,7 +83,6 @@ class User{
     this.address = new Address(map["address"]);
     this.website = map["website"];
     this.phone = map["phone"];
-  //  Map company = map["company"];
     this.company = new Company (map["company"]);
     
   }

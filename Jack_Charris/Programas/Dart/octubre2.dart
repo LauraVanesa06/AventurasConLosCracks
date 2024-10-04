@@ -5,16 +5,22 @@ void main() async {
   var url = Uri.https('jsonplaceholder.typicode.com', 'users/1');
   var response = await http.get(url);
   
-  
-  User user = User(response.body);
-  print("id: ${user.id}");
-  print("name: ${user.name}");
-  print("username: ${user.username}");
-  print("email: ${user.email}");
-  print("address: ${user.address}");
-  print("phone: ${user.phone}");
-  print("website: ${user.website}");
-  print("company: ${user.company}");
+  if (response.statusCode == 200) {
+    User user = User(response.body);
+
+    print("User Info:");
+    print("ID: ${user.id}");
+    print("Name: ${user.name}");
+    print("Username: ${user.username}");
+    print("Email: ${user.email}");
+    print("Address: ${user.address}");
+    print("Phone: ${user.phone}");
+    print("Website: ${user.website}");
+    print("Company: ${user.company}");
+    
+  } else {
+     print("Fallo al obtener informacion");
+    }
 }
 
 
@@ -28,7 +34,7 @@ class Company{
       this.catchPhrase = company["catchPhrase"];
       this.bs = company["bs"];
     }
-  String toString(){
+    String toString(){
     return '["name": "${name}", "catchPhrase": "${catchPhrase}", "bs": "${bs}"]';
   }
 }
@@ -47,7 +53,7 @@ class Address{
     this.geo = new Geo(address["geo"]);
   }
   String toString(){
-    return '["city": "${city}", "suite": "${suite}", "city": "${city}", "zipcode": "${zipcode}", "geo": "${geo}"]';
+    return '["street": "${street}", "suite": "${suite}", "city": "${city}", "zipcode": "${zipcode}", "geo": "${geo}"]';
   }
 }
 class Geo{
@@ -60,7 +66,7 @@ class Geo{
   }
   
   String toString(){
-    return '"geo": ["lat": "${lat}", "lng": "${lng}"]';
+    return '["lat": "${lat}", "lng": "${lng}"]';
   }
 }
 class User{

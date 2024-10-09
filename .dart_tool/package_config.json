@@ -71,11 +71,13 @@
       "name": "test",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.4"
+      "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-10-07T17:38:17.274536Z",
+  "generated": "2024-10-09T03:41:48.627759Z",
   "generator": "pub",
-  "generatorVersion": "3.4.3",
+  "generatorVersion": "3.5.3",
+  "flutterRoot": "file:///C:/KeinerL/componets/flutter",
+  "flutterVersion": "3.24.3",
   "pubCache": "file:///C:/Users/KeinerL/AppData/Local/Pub/Cache"
 }

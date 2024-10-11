@@ -15,7 +15,7 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.2.2",
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.2.1",
       "packageUri": "lib/",
       "languageVersion": "3.3"
     },
@@ -74,7 +74,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-10-11T20:58:38.284735Z",
+  "generated": "2024-10-11T21:40:21.941582Z",
   "generator": "pub",
   "generatorVersion": "3.3.1"
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+
 
 class HomePage extends StatelessWidget {
   const HomePage({
@@ -29,8 +31,7 @@ class HomePage extends StatelessWidget {
   }
 }
 
-Future<String> fetchData() {
-  return Future.delayed(Duration(seconds: 5), () {
-    return 'datos cargados';
-  });
+Future<Map<String, dynamic>> test() async{
+  var url = Uri.http('jsonplaceholder.typicode.com', 'users/1');
+  
 }

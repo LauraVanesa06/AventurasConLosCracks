@@ -88,12 +88,15 @@ void main() async {
   var url = Uri.https('jsonplaceholder.typicode.com', 'users/${num}');
   var response = await http.get(url);
 
+  String date = await fetchData();
+  print(date);
+
   try {} catch (error) {
     print('Error: $error');
   } finally {
-    print('completado');
+    print('exitoso');
   }
-  
+
   User a = new User(response.body);
   print('id: ${a.id}');
   print('name: ${a.name}');

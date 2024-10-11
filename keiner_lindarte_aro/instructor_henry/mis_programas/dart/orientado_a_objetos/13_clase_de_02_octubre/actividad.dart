@@ -1,9 +1,13 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import 'dart:io';
 
 void main() async{
 
-  var url = Uri.https('jsonplaceholder.typicode.com', 'users/1');
+  print('Ingrese el numero de usuario que quiera consultar su informacion:');
+  String input1 = stdin.readLineSync()!;
+
+  var url = Uri.https('jsonplaceholder.typicode.com', 'users/${input1}');
   var response = await http.get(url);
   
   User usuario = User(response.body);
@@ -30,7 +34,7 @@ class Company{
   }
   
   String toString(){
-    return '["name": "${name}", "catchPhrase": "${catchPhrase}", "bs": "${bs}"]';
+    return '["name": ${name}, "catchPhrase": ${catchPhrase}, "bs": ${bs}]';
   }
   
 }
@@ -51,7 +55,7 @@ class Address{
   }
   
   String toString(){
-    return '["city": "${city}", "suite": "${suite}", "street": "${street}", "zipcode": "${zipcode}", ${geo}]';
+    return '["city": ${city}, "suite": ${suite}, "street": ${street}, "zipcode": ${zipcode}, ${geo}]';
   }
   
 }
@@ -66,7 +70,7 @@ class Geo{
   }
   
   String toString(){
-    return '"geo": ["lat": "${lat}", "lng": "${lng}}"]';
+    return '"geo": ["lat": ${lat}, "lng": ${lng}}]';
   }
 }
 

@@ -10,17 +10,18 @@ class HomePage extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          Image.network(
-              'https://media.giphy.com/media/65LrvAMGU650TvPgs5/giphy.gif?raw=true',
-          ),
+          Text(''),
+          Image.network('https://picsum.photos/250?image=9'),
+          Text(''),
           Text('ID: 1'),
           Text('Name: Keiner'),
           Text('Username: KeinerL'),
           Text('Email: Keinerlindarte2@gmail.com'),
-          Text('Address: {jsonString}'),
+          Text('Address: [Street: Costa Hermosa, Suite: apt. 018, City: soledad, Zipcode: 92998-3874, Geo: [Lat: -37.3159, Lng: 81.1496]]'),
           Text('Phone: 3243474417'),
           Text('Website: sena.org'),
-          Text('Company: {jsonString}'),
+          Text('Company: [Name: SENA, CatchPhrase: Multi-layered client-server neural-net, Bs: harness real-time e-markets]'),
+          Text(''),
           ElevatedButton(onPressed: (){}, child: Text('BUSCAR')),
           CircularProgressIndicator()
         ],),

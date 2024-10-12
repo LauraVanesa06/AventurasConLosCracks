@@ -1,6 +1,19 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import 'userdata.dart';
+
+
+Future<Map<String, dynamic>> urlData() async{
+  var url = Uri.http('jsonplaceholder.typicode.com', 'users/1');
+  var response = await http.get(url);
+
+  Map<String, dynamic> map = jsonDecode(response.body);
+
+  return map;
+
+}
 
 class HomePage extends StatelessWidget {
   const HomePage({
@@ -12,26 +25,57 @@ class HomePage extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          Text(''),
-          Image.network('https://picsum.photos/250?image=9'),
-          Text(''),
-          Text('ID: 1'),
-          Text('Name: Keiner'),
-          Text('Username: KeinerL'),
-          Text('Email: Keinerlindarte2@gmail.com'),
-          Text('Address: [Street: Costa Hermosa, Suite: apt. 018, City: soledad, Zipcode: 92998-3874, Geo: [Lat: -37.3159, Lng: 81.1496]]'),
-          Text('Phone: 3243474417'),
-          Text('Website: sena.org'),
-          Text('Company: [Name: SENA, CatchPhrase: Multi-layered client-server neural-net, Bs: harness real-time e-markets]'),
-          Text(''),
-          ElevatedButton(onPressed: fetchData, child: Text('BUSCAR')),
+          FutureBuilder(
+            future: urlData(),
+            builder: (context, snapshot) {
+          
+              if (snapshot.hasData) {
+                
+                User usuario = User(snapshot.data as Map<String, dynamic>);
+                return Profile(usuario: usuario);
+              
+              }else{
+                return const Center(child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center, 
+                  children: [
+                  CircularProgressIndicator(), 
+                ],),);
+              }
+            }
+          ),
+          ElevatedButton(onPressed: (){}, child: Text('Buscar')),
           CircularProgressIndicator()
-        ],),
+        ]
+      )
     );
   }
 }
 
-Future<Map<String, dynamic>> test() async{
-  var url = Uri.http('jsonplaceholder.typicode.com', 'users/1');
-  
+class Profile extends StatelessWidget {
+  final User usuario;
+
+  const Profile({super.key, required this.usuario,});
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+        child: Column(
+          children: [
+          Text(''),
+          Image.network('https://picsum.photos/250?image=9'),
+          Text(''),
+          Text('ID: ${usuario.id}'),
+          Text('Name: ${usuario.name}'),
+          Text('Username: ${usuario.username}'),
+          Text('Email: ${usuario.email}'),
+          Text('Address: ${usuario.address}'),
+          Text('Phone: ${usuario.phone}'),
+          Text('Website: ${usuario.website}'),
+          Text('Company: ${usuario.company}'),
+          Text(''),
+          ],
+        )
+    );
+  }
+
 }

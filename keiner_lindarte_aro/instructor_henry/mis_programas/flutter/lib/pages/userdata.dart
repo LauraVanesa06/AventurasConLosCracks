@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 class Company{
   String? name;
   String? catchPhrase;

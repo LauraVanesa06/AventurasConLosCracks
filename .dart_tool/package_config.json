@@ -3,69 +3,115 @@
   "packages": [
     {
       "name": "async",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.11.0",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/async-2.11.0",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "collection",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/collection-1.18.0",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "http",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.2.0",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.2.2",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
       "name": "http_parser",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.0.2",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "meta",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.16.0",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.16.0",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
     {
       "name": "source_span",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.0",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/source_span-1.10.0",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "string_scanner",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.3.0",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/string_scanner-1.3.0",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "3.1"
     },
     {
       "name": "term_glyph",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.1",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/term_glyph-1.2.1",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "typed_data",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.3.2",
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.3.2",
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "web",
+<<<<<<< HEAD
       "rootUri": "file:///C:/Users/PC-%208/AppData/Local/Pub/Cache/hosted/pub.dev/web-0.4.2",
       "packageUri": "lib/",
       "languageVersion": "3.2"
+=======
+      "rootUri": "file:///C:/Users/Usuario/AppData/Local/Pub/Cache/hosted/pub.dev/web-0.5.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
     },
     {
       "name": "test",
@@ -74,7 +120,17 @@
       "languageVersion": "3.0"
     }
   ],
+<<<<<<< Updated upstream
   "generated": "2024-10-16T21:55:34.580588Z",
+=======
+<<<<<<< HEAD
+  "generated": "2024-10-11T21:13:56.594147Z",
+>>>>>>> Stashed changes
   "generator": "pub",
   "generatorVersion": "3.2.6"
+=======
+  "generated": "2024-10-11T20:58:38.284735Z",
+  "generator": "pub",
+  "generatorVersion": "3.3.1"
+>>>>>>> d974dc6c2cbc8dfa72f6223f04ba12e9c16ee564
 }

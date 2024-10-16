@@ -72,7 +72,7 @@ class Geo {
 
 void main()async{
   var url = Uri.https('jsonplaceholder.typicode.com', '/users/4');
-  //print('Calculando...');
+  print('Calculando...');
   var response = await http.get(url);
   //print('Response status: ${response.statusCode}');
   //print('Response body: ${response.body}');

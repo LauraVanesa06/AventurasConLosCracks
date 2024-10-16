@@ -15,14 +15,14 @@ class Homepage extends StatelessWidget {
           ),
 
         Text('Id: 1'),
-        Text('Name: Jack Charris'),
-        Text('Username: Jack007'),
-        Text('Email: charrisjack24@gmail.com'),
-        Text('Address: {JsonString}'),
-        Text('Phone: 3045941877'),
+        Text('Name: Laura de la Hoz'),
+        Text('Username: Lvanesa'),
+        Text('Email: lvanesadelahoz@gmail.com'),
+        Text('Address: midireccion'),
+        Text('Phone: ....'),
         Text('Website: Web'),
-        Text('Company: {JsonString}'),
-        ElevatedButton(onPressed: (){}, child: Text('Buscar')),
+        Text('Company: LVasossci'),
+        ElevatedButton(onPressed: (){}, child: Text('Enviar')),
         CircularProgressIndicator.adaptive()
       ],
     );

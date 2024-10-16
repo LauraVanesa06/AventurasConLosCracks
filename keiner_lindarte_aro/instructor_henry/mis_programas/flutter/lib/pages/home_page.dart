@@ -22,9 +22,15 @@ class HomePage extends StatelessWidget {
           Text('Website: sena.org'),
           Text('Company: [Name: SENA, CatchPhrase: Multi-layered client-server neural-net, Bs: harness real-time e-markets]'),
           Text(''),
-          ElevatedButton(onPressed: (){}, child: Text('BUSCAR')),
+          ElevatedButton(onPressed: fetchData, child: Text('BUSCAR')),
           CircularProgressIndicator()
         ],),
     );
   }
+}
+
+Future<String> fetchData() {
+  return Future.delayed(Duration(seconds: 5), () {
+    return 'datos cargados';
+  });
 }

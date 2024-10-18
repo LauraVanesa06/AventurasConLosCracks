@@ -1,8 +1,9 @@
 # MARKDOWM 
+Markdown es un lenguaje de marcado ligero creado en 2004 por John Gruber y Aaron Swartz. Esta herramienta de escritura es fácil de leer y entender, incluso sin formato, y es más amigable con los usuarios que los lenguajes de marcado más complejos. El objetivo de Markdown es proporcionar una forma simple de escribir documentos sin tener que aprender un lenguaje de programación completo. Esto lo hace ideal para los escritores de todos los niveles de habilidad, desde principiantes hasta expertos.
+
 ### Ejemplos
 
 ## Negrita
-
 **para colocar negrita se deben poner dos asteriscos tanto al incio como al final de las palabras o frases ( ** )**
 
 ## Cursiva 

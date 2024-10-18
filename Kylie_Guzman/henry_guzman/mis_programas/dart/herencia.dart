@@ -32,5 +32,4 @@ void main(){
   c.color = 'marron';
   c.peso = 120;
 
-  
 }

@@ -229,7 +229,7 @@
 									"top": 226,
 									"width": 220,
 									"height": 26,
-									"text": "'Ingrese un numero valido y sin espacios' + opcion",
+									"text": "'Su numero digitado es un numero positivo:' + opcion",
 									"wordWrap": true
 								}
 							],
@@ -263,7 +263,7 @@
 									"top": 346,
 									"width": 216,
 									"height": 26,
-									"text": "'Ingrese un numero valido y sin espacios' + opcion",
+									"text": "'Su numero digitado es un numero negativo:' + opcion",
 									"wordWrap": true
 								}
 							],
@@ -296,7 +296,7 @@
 										"$ref": "AAAAAAGPy9QK6dXmyVg="
 									},
 									"font": "Arial;13;0",
-									"left": 473,
+									"left": 472,
 									"top": 219,
 									"width": 9.38818359375,
 									"height": 13,
@@ -317,7 +317,7 @@
 								"$ref": "AAAAAAGPy9GT8dWed0A="
 							},
 							"lineStyle": 2,
-							"points": "442:240;512:240",
+							"points": "441:240;512:240",
 							"nameLabel": {
 								"$ref": "AAAAAAGPy9QK6tXpOF0="
 							}
@@ -342,7 +342,7 @@
 										"$ref": "AAAAAAGPy9Qfi9Xwxy0="
 									},
 									"font": "Arial;13;0",
-									"left": 477,
+									"left": 476,
 									"top": 334,
 									"width": 9.38818359375,
 									"height": 13,
@@ -363,7 +363,7 @@
 								"$ref": "AAAAAAGPy9HIUdWqylw="
 							},
 							"lineStyle": 2,
-							"points": "442:355;520:355",
+							"points": "441:355;520:355",
 							"nameLabel": {
 								"$ref": "AAAAAAGPy9Qfi9Xzu8U="
 							}
@@ -389,7 +389,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 392,
-									"top": 289,
+									"top": 288,
 									"width": 14.4599609375,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -409,7 +409,7 @@
 								"$ref": "AAAAAAGPy9GT8dWed0A="
 							},
 							"lineStyle": 2,
-							"points": "385:272;385:320",
+							"points": "385:271;385:320",
 							"nameLabel": {
 								"$ref": "AAAAAAGPy9QvmdX9A00="
 							}
@@ -436,7 +436,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 669,
-									"top": 553,
+									"top": 561,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -454,7 +454,7 @@
 								"$ref": "AAAAAAGPy9Md6dXEKok="
 							},
 							"lineStyle": 2,
-							"points": "670:262;670:544;425:544",
+							"points": "670:261;670:552;424:552",
 							"nameLabel": {
 								"$ref": "AAAAAAGPy9RTOdYHJcw="
 							}
@@ -481,7 +481,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 659,
-									"top": 553,
+									"top": 561,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -499,7 +499,7 @@
 								"$ref": "AAAAAAGPy9PP8tXbC1I="
 							},
 							"lineStyle": 2,
-							"points": "660:382;660:544;425:544",
+							"points": "660:381;660:552;424:552",
 							"nameLabel": {
 								"$ref": "AAAAAAGPy9RegtYQ0nQ="
 							}
@@ -526,7 +526,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 398,
-									"top": 181,
+									"top": 180,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -544,7 +544,7 @@
 								"$ref": "AAAAAAGPy9EZIdWPmBk="
 							},
 							"lineStyle": 2,
-							"points": "384:168;384:208",
+							"points": "384:167;384:208",
 							"nameLabel": {
 								"$ref": "AAAAAAGPy9SGidYZHSw="
 							}
@@ -589,7 +589,7 @@
 								"$ref": "AAAAAAGPy9BSo9VmLJE="
 							},
 							"lineStyle": 2,
-							"points": "387:97;387:128",
+							"points": "387:96;387:128",
 							"nameLabel": {
 								"$ref": "AAAAAAGPy9SPLtYir6o="
 							}
@@ -649,7 +649,7 @@
 									},
 									"font": "Arial;13;0",
 									"left": 390,
-									"top": 401,
+									"top": 400,
 									"width": 14.4599609375,
 									"height": 13,
 									"alpha": 1.5707963267948966,
@@ -669,7 +669,7 @@
 								"$ref": "AAAAAAGPy9HIUdWqylw="
 							},
 							"lineStyle": 2,
-							"points": "383:384;383:432",
+							"points": "383:383;383:432",
 							"nameLabel": {
 								"$ref": "AAAAAAGPy9VosdY5ccA="
 							}
@@ -696,7 +696,7 @@
 									"visible": false,
 									"font": "Arial;13;0",
 									"left": 394,
-									"top": 504,
+									"top": 503,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -714,7 +714,7 @@
 								"$ref": "AAAAAAGPy9TLhdYqilc="
 							},
 							"lineStyle": 2,
-							"points": "380:478;380:544",
+							"points": "380:477;380:544",
 							"nameLabel": {
 								"$ref": "AAAAAAGPy9V9YdZDROo="
 							}
@@ -857,7 +857,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGPy9A899VfmHk="
 					},
-					"name": "'Ingrese un numero valido y sin espacios' + opcion",
+					"name": "'Su numero digitado es un numero positivo:' + opcion",
 					"ownedElements": [
 						{
 							"_type": "FCFlow",
@@ -880,7 +880,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGPy9A899VfmHk="
 					},
-					"name": "'Ingrese un numero valido y sin espacios' + opcion",
+					"name": "'Su numero digitado es un numero negativo:' + opcion",
 					"ownedElements": [
 						{
 							"_type": "FCFlow",

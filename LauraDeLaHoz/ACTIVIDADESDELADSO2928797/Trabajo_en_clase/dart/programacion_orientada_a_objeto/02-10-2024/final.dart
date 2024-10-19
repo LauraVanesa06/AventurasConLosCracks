@@ -19,11 +19,10 @@ class User {
     this.website = m['website'];
     this.phone = m['phone'];
     
-    Map company = m['company'];
-    this.company = Company(company);
+    this.company = new Company (m["company"]);
 
-    Map address = m['address'];
-    this.address = Address(address);
+    this.address = new Address(m["address"]);
+
 
   }
 } 

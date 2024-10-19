@@ -63,6 +63,7 @@ class Particular extends Transporte {
         this.modelo = modelo;
     }
    
+    @Override
     public String getInfo (){
         return this.ciudad;
     }

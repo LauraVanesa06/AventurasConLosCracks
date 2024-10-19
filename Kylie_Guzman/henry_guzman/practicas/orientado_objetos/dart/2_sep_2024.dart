@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'dart:io';
+//import 'dart:io';
 import 'package:http/http.dart' as http;
 
 class User{
@@ -80,9 +80,7 @@ class Company{
 
 void main()async{
 
-  print('ingrese el numero de usuario q desea ver');
-  int num = int.parse(stdin.readLineSync()!);
-  var url = Uri.https('jsonplaceholder.typicode.com', 'users/${num}');
+  var url = Uri.https('jsonplaceholder.typicode.com', 'users/1');
   var response = await http.get(url);
   User a = new User(response.body);
   print('id: ${a.id}');

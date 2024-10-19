@@ -1,0 +1,10 @@
+puts"EL";
+puts"REAL";
+puts"MADRID";
+puts"TRIUNFARA";
+puts"EN";
+puts"EL";
+puts"CAMPO";
+puts"CON";
+puts"GRAN";
+puts"VICTORIA";

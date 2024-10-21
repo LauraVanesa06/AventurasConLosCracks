@@ -19,7 +19,7 @@ class Myapp extends StatelessWidget{
           foregroundColor: const Color(0xFFFDFCE4),
           backgroundColor: const Color(0xFF4BBDFF),
           ),
-        body: const Column(
+        body: Column(
           children: [
             HomePage()
           ],),

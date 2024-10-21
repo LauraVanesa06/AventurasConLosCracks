@@ -1,30 +1,101 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
-class HomePage extends StatelessWidget {
-  const HomePage({
-    super.key,
-  });
+import 'userdata.dart';
+
+class HomePage extends StatefulWidget {
+  @override
+  Info createState(){
+    return Info();
+  }
+}
+
+class Info extends State<HomePage> {
+  Future<Map<String, dynamic>>? stateChange;
+  final TextEditingController input = TextEditingController();
+
+  Future<Map<String, dynamic>> dataHttp(String input) async{
+  
+    var url = Uri.http('jsonplaceholder.typicode.com', 'users/$input');
+    await Future.delayed(Duration(seconds: 2));
+    var response = await http.get(url);
+    Map<String, dynamic> map = jsonDecode(response.body);
+
+    return map;
+
+  }
+
+  void changeStateUser() {
+    setState(() {
+      stateChange = dataHttp(input.text);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Column(
         children: [
-          Text(''),
-          Image.network('https://picsum.photos/250?image=9'),
-          Text(''),
-          Text('ID: 1'),
-          Text('Name: Keiner'),
-          Text('Username: KeinerL'),
-          Text('Email: Keinerlindarte2@gmail.com'),
-          Text('Address: [Street: Costa Hermosa, Suite: apt. 018, City: soledad, Zipcode: 92998-3874, Geo: [Lat: -37.3159, Lng: 81.1496]]'),
-          Text('Phone: 3243474417'),
-          Text('Website: sena.org'),
-          Text('Company: [Name: SENA, CatchPhrase: Multi-layered client-server neural-net, Bs: harness real-time e-markets]'),
-          Text(''),
-          ElevatedButton(onPressed: (){}, child: Text('BUSCAR')),
-          CircularProgressIndicator()
-        ],),
+          FutureBuilder(
+            future: stateChange,
+            builder: (BuildContext context, AsyncSnapshot<Map<String, dynamic>> snapshot) {
+              if (snapshot.connectionState == ConnectionState.waiting) {
+                return Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 30.0),
+                  child: CircularProgressIndicator(),
+                );
+              } else if (snapshot.hasError){
+                  return Text('Error: ${snapshot.error}');
+              } else if (snapshot.hasData){
+                  User user = User(snapshot.data as Map);
+                  return Center(
+                    child: Column(
+                      children: [
+                      Text(''),
+                      Image.network('https://fastly.picsum.photos/id/9/250/250.jpg?hmac=tqDH5wEWHDN76mBIWEPzg1in6egMl49qZeguSaH9_VI'),
+                      Text(''),
+                      Text('ID: ${user.id}'),
+                      Text('Name: ${user.name}'),
+                      Text('Username: ${user.username}'),
+                      Text('Email: ${user.email}'),
+                      Text('Address: ${user.address}'),
+                      Text('Phone: ${user.phone}'),
+                      Text('Website: ${user.website}'),
+                      Text('Company: ${user.company}'),
+                      Text('')
+                ],),);
+              } else {
+                return Center(
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 200,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 30.0),
+                          child: TextField(
+                            textAlign: TextAlign.center,
+                            controller: input,
+                            decoration: InputDecoration(
+                              labelText: 'Numero de usuario:',
+                              border: OutlineInputBorder()
+                            ),
+                          ),
+                        ),
+                      ),
+                    ElevatedButton(
+                      onPressed: changeStateUser,
+                      child: Text('Cargar Datos'),
+                    )
+                    ],
+                  ),
+                );
+              }
+            }
+          ),
+          
+        ]
+      )
     );
   }
 }

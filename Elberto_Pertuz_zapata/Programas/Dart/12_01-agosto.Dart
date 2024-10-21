@@ -17,14 +17,14 @@ void calcular() {
     print("ingrese segundo numero");
     double num_2 = double.parse(stdin.readLineSync()!);
 
-    print("QUE DESEA REALIZAR");
+    print("QUE OPERACION DESEA REALIZAR");
     print(" 1: SUMAR");
     print(" 2: RESTAR");
     print(" 3: MULTIPLICAR");
     print(" 4: DIVIDIR");
     int kkk = int.parse(stdin.readLineSync()!);
 
-double suma( double num_1, double num_2 ){
+    double suma( double num_1, double num_2 ){
       return num_1 + num_2;
     }
 
@@ -43,11 +43,11 @@ double suma( double num_1, double num_2 ){
 
     if(kkk == 1){
       resultado = suma( num_1, num_2 );
-    }else if( kkk == 2) {
+    }else if ( kkk == 2) {
       resultado = resta( num_1, num_2 );
-    }else if( kkk == 3) {
+    }else if ( kkk == 3) {
       resultado = multiplicar( num_1, num_2 );
-    }else if( kkk == 4) {
+    }else if ( kkk == 4) {
       resultado = dividir( num_1, num_2 );
     }else{
       print("error");

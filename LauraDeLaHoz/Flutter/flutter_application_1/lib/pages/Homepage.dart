@@ -18,7 +18,7 @@ class Homepage extends StatelessWidget {
         Text('Name: ...'),
         Text('Username: ...'),
         Text('Email: ...'),
-        Text('Address: ...'),
+        Text('Address: ...'), 
         Text('Phone: ...'),
         Text('Website: .'),
         Text('Company: ..'),

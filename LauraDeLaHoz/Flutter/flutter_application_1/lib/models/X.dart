@@ -16,7 +16,24 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         home: Scaffold(
             appBar: AppBar(title: Text('SENA')),
-            body: chil
-        ),
+            body: Column(
+               children: [
+                SizedBox(height: 20.0,),
+                Image.network(
+                  'https://media.giphy.com/media/65LrvAMGU650TvPgs5/giphy.gif?raw=true',
+                  width: 300.0,
+                  //sucess todo bien
+                ),
+                Text('llll'),
+                Row( children:[
+                  Icon(Icons.favorite),
+                  Icon(Icons.favorite),
+                ]
+
+                )
+               ]
+            )
+        )
+    );
   }
-  }
+}

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'Pages/Homepage.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +17,15 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         home: Scaffold(
             appBar: AppBar(title: Text('SENA')),
-            body: chil
+            body: column(
+               children: [
+                Image.network(
+                  'https://media.giphy.com/media/65LrvAMGU650TvPgs5/giphy.gif?raw=true',
         ),
+        Text('Id: 1'),
+               ]
+            )
+        )
+    );
   }
-  }
+}

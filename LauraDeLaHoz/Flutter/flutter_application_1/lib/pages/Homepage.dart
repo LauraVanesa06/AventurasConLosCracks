@@ -11,9 +11,8 @@ class Homepage extends StatelessWidget {
     return Column(
       children: [
         Image.network(
-              'https://media.giphy.com/media/65LrvAMGU650TvPgs5/giphy.gif?raw=true',
-          ),
-
+          'https://media.giphy.com/media/65LrvAMGU650TvPgs5/giphy.gif?raw=true',
+        ),
         Text('Id: 1'),
         Text('Name: ...'),
         Text('Username: ...'),

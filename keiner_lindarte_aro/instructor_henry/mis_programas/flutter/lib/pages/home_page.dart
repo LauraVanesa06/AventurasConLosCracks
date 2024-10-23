@@ -1,7 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:main/widgets/information.dart';
 
+
+import 'package:main/widgets/loading.dart';
 import 'userdata.dart';
 
 class HomePage extends StatefulWidget {
@@ -41,30 +44,12 @@ class Info extends State<HomePage> {
             future: stateChange,
             builder: (BuildContext context, AsyncSnapshot<Map<String, dynamic>> snapshot) {
               if (snapshot.connectionState == ConnectionState.waiting) {
-                return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 30.0),
-                  child: CircularProgressIndicator(),
-                );
+                return loading();
               } else if (snapshot.hasError){
                   return Text('Error: ${snapshot.error}');
               } else if (snapshot.hasData){
                   User user = User(snapshot.data as Map);
-                  return Center(
-                    child: Column(
-                      children: [
-                      Text(''),
-                      Image.network('https://fastly.picsum.photos/id/9/250/250.jpg?hmac=tqDH5wEWHDN76mBIWEPzg1in6egMl49qZeguSaH9_VI'),
-                      Text(''),
-                      Text('ID: ${user.id}'),
-                      Text('Name: ${user.name}'),
-                      Text('Username: ${user.username}'),
-                      Text('Email: ${user.email}'),
-                      Text('Address: ${user.address}'),
-                      Text('Phone: ${user.phone}'),
-                      Text('Website: ${user.website}'),
-                      Text('Company: ${user.company}'),
-                      Text('')
-                ],),);
+                  return information(user: user);
               } else {
                 return Center(
                   child: Column(

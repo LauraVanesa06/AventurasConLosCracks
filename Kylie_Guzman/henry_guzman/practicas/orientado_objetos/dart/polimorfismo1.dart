@@ -1,4 +1,4 @@
-void main(){
+  void main(){
 
   Animal perro = Perro();
   Animal gato = Gato();

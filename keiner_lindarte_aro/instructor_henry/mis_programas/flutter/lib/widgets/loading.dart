@@ -7,9 +7,14 @@ class loading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 30.0),
-      child: CircularProgressIndicator(),
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CircularProgressIndicator(strokeWidth: 10.0, strokeAlign: 5.0, color: Color(0x5A014166)),
+          SizedBox(height: 50.0),
+          Text('Cargando...', style: TextStyle(fontSize: 30.0),),
+        ],),
     );
   }
 }

@@ -2,9 +2,8 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 
 Future<String> fetchData() async {
-  return await Future.delayed(Duration(seconds: 2), () {
-    return 'Datos obtenidos después de 2 segundos';
-  });
+  await Future.delayed(Duration(seconds: 2));
+  return 'Datos obtenidos después de 2 segundos';
 }
 
 

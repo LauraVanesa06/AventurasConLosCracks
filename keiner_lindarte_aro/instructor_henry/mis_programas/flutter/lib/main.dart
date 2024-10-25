@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'pages/home_page.dart';
+import 'models/home_page.dart';
 
 void main(){
   runApp(Myapp());
@@ -19,10 +19,7 @@ class Myapp extends StatelessWidget{
           foregroundColor: const Color(0xFFFDFCE4),
           backgroundColor: const Color(0xFF4BBDFF),
           ),
-        body: Column(
-          children: [
-            HomePage()
-          ],),
+        body: HomePage()
       ),
     );
   }

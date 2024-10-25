@@ -16,17 +16,17 @@ class HomePage extends StatefulWidget {
 }
 
 class Info extends State<HomePage> {
-  Future<Map<String, dynamic>>? stateChange;
+  Future<User>? stateChange;
   final TextEditingController input = TextEditingController();
 
-  Future<Map<String, dynamic>> dataHttp(String input) async{
+  Future<User> dataHttp(String input) async{
   
     var url = Uri.http('jsonplaceholder.typicode.com', 'users/$input');
     await Future.delayed(Duration(seconds: 2));
     var response = await http.get(url);
-    Map<String, dynamic> map = jsonDecode(response.body);
+    User user = User(response.body);
 
-    return map;
+    return user;
 
   }
 
@@ -43,13 +43,13 @@ class Info extends State<HomePage> {
         children: [
           FutureBuilder(
             future: stateChange, 
-            builder: (BuildContext context, AsyncSnapshot<Map<String, dynamic>> snapshot){
+            builder: (BuildContext context, AsyncSnapshot<User> snapshot){
               if(snapshot.connectionState == ConnectionState.waiting){
                 return loading();
               }else if (snapshot.hasError){
                 return Text('Error: ${snapshot.error}');
               }else if (snapshot.hasData){
-                User user = User(snapshot.data as Map);
+                User user = snapshot.data!;
                 return information(user: user);
               }else {
                 return Home(input: input,changeStateUser: changeStateUser);

@@ -38,8 +38,9 @@ void main(){
   c.color = 'marron';
   c.peso = 120;
   
-print('el animal que tiene por nombre ${p.nombre} de color ${p.color} y de ${p.edad_meses} meses de edad');
-print('el animal que tiene por nombre ${g.nombre} de color ${g.color} y de ${g.num_patas} patas');
-print('el animal que tiene por nombre ${c.nombre} de color ${c.color} y pesa ${c.peso} libras, vacunas = ');
+  
+print('el animal tiene por nombre ${p.nombre}, es de color ${p.color} y de ${p.edad_meses} meses de edad');
+print('el animal tiene por nombre ${g.nombre}, es de color ${g.color} y de ${g.num_patas} patas');
+print('el animal tiene por nombre ${c.nombre}, es de color ${c.color}, pesa ${c.peso} libras y tiene    vacunas');
 
 }

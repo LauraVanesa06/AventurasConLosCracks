@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 class Company{
   String? name;
   String? catchPhrase;
@@ -62,7 +64,8 @@ class User{
   String? website;
   Company? company;
   
-  User(Map user){
+  User(String jsonString){
+    Map<String, dynamic> user = jsonDecode(jsonString);
     this.id = user['id'];
     this.name = user['name'];
     this.username = user['username'];

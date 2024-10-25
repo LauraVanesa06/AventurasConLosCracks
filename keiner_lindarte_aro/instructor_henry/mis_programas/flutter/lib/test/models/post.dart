@@ -8,11 +8,11 @@ class Post {
   String? body;
 
   Post(String jsonString){
-    Map<String, dynamic> post = jsonDecode(jsonString);
-    this.userId = post['userId'];
-    this.id = post['id'];
-    this.title = post['title'];
-    this.body = post['body'];
+    Map<String, dynamic> data = jsonDecode(jsonString);
+    this.userId = data['userId'];
+    this.id = data['id'];
+    this.title = data['title'];
+    this.body = data['body'];
   }
 
 }

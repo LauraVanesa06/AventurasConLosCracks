@@ -2,6 +2,8 @@ import 'package:http/http.dart' as http;
 
 import 'package:flutter/material.dart';
 import 'package:main/test/models/post.dart';
+import 'package:main/test/widgets/loading.dart';
+import 'package:main/test/widgets/success.dart';
 
 void main(){
   runApp(Myapp());
@@ -10,8 +12,10 @@ void main(){
 class Myapp extends StatelessWidget {
 
   Future<Post> solicitud() async{
-    var url = Uri.http('https://jsonplaceholder.typicode.com/posts/1');
+    var url = Uri.http('jsonplaceholder.typicode.com', 'posts/1');
+    await Future.delayed(Duration(seconds: 2));
     var response = await http.get(url);
+
     
     if (response.statusCode == 200){
       Post post = Post(response.body);
@@ -21,6 +25,7 @@ class Myapp extends StatelessWidget {
     }
   }
 
+  @override
   Widget build(BuildContext context){
     return MaterialApp(
       home: Scaffold(
@@ -28,7 +33,12 @@ class Myapp extends StatelessWidget {
           future: solicitud(),
           builder: (BuildContext contex, AsyncSnapshot<Post> snapshot){
             if(snapshot.connectionState == ConnectionState.waiting){
-              
+              return loading();
+            } else if (snapshot.hasError){
+              throw Exception('Error ${snapshot.error}');
+            } else {
+              Post post = snapshot.data!;
+              return Success(post: post);
             }
           },
         ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:main/test/models/post.dart';
 
+// ignore: must_be_immutable
 class Success extends StatelessWidget {
   Post post;
   

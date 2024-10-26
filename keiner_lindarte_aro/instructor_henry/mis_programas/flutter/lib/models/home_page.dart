@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:main/widgets/errordata.dart';
 import 'package:main/widgets/information.dart';
 
 
@@ -24,11 +25,12 @@ class Info extends State<HomePage> {
     await Future.delayed(Duration(seconds: 1));
     var response = await http.get(url);
 
+
     if (response.statusCode == 200){
       User user = User(response.body);
       return user;
-    } else{
-      throw Exception('Ha ocurrido un erro!!');
+    } else {
+      throw ('Ha ocurrido un error ${response.statusCode}');
     }
 
   }
@@ -49,9 +51,10 @@ class Info extends State<HomePage> {
             builder: (BuildContext context, AsyncSnapshot<User> snapshot){
               if(snapshot.connectionState == ConnectionState.waiting){
                 return loading();
-              }else if (snapshot.hasError){
-                return Text('Error: ${snapshot.error}');
-              }else if (snapshot.hasData){
+              } else if(snapshot.hasError){
+                return errordata(snapshot: snapshot);
+              }
+              else if (snapshot.hasData){
                 User user = snapshot.data!;
                 return information(user: user);
               }else {
@@ -63,3 +66,4 @@ class Info extends State<HomePage> {
     );
   }
 }
+

@@ -94,7 +94,7 @@ class Userstate extends State<UserPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Center(child: Text('Datos del Usuario:')),
+          title: Text('Datos del Usuario:'),
           foregroundColor: const Color(0xFFFDFCE4),
           backgroundColor: const Color.fromARGB(226, 0, 26, 83),
           ),
@@ -158,7 +158,7 @@ class Poststate extends State<PostPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: const Center(child: Text('Posts del Usuario:')),
+          title: Text('Posts del Usuario:'),
           foregroundColor: const Color(0xFFFDFCE4),
           backgroundColor: const Color.fromARGB(226, 0, 26, 83),
           ),

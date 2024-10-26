@@ -51,10 +51,9 @@ class Info extends State<HomePage> {
             builder: (BuildContext context, AsyncSnapshot<User> snapshot){
               if(snapshot.connectionState == ConnectionState.waiting){
                 return loading();
-              } else if(snapshot.hasError){
+              }else if(snapshot.hasError){
                 return errordata(snapshot: snapshot);
-              }
-              else if (snapshot.hasData){
+              }else if (snapshot.hasData){
                 User user = snapshot.data!;
                 return information(user: user);
               }else {

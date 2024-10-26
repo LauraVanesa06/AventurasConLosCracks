@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:main/widgets(home)/users.dart';
 
+import 'package:main/widgets(user)/Users/homeUser.dart';
+import 'package:main/widgets(user)/Posts/homePost.dart';
+import 'package:main/widgets(user)/Users/informationUser.dart';
+import 'package:main/widgets(user)/Posts/informationPost.dart';
 import 'package:main/widgets(user)/loading.dart';
-import 'package:main/widgets(user)/home.dart';
-import 'package:main/widgets(user)/information.dart';
 import 'package:main/widgets(user)/errordata.dart';
 
 import 'userdata.dart';
@@ -98,9 +100,9 @@ class InfoState extends State<Info> {
                   return errordata(snapshot: snapshot);
                 } else if (snapshot.hasData) {
                   User user = snapshot.data!;
-                  return information(user: user);
+                  return informationUser(user: user);
                 } else {
-                  return Home(input: input, changeStateUser: changeStateUser);
+                  return HomeUser(input: input, changeStateUser: changeStateUser);
                 }
               },
             ),

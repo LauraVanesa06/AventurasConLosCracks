@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:main/models/home_page.dart';
 
-class Post extends StatelessWidget {
-  const Post({
+class PostButton extends StatelessWidget {
+  const PostButton({
     super.key,
   });
 
@@ -15,10 +15,10 @@ class Post extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Info()),
+              MaterialPageRoute(builder: (context) => PostPage()),
             );
           },
-          child: Text('Consultar datos del usuario'),
+          child: Text('Consultar posts del usuario'),
         ),
       ],
     );

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:main/models/userdata.dart';
+import 'package:main/models/postdata.dart';
 
-class information extends StatelessWidget {
+class informationPost extends StatelessWidget {
 
-  final User user;
+  final Post post;
 
-  information({
+  informationPost({
     super.key,
-    required this.user,
+    required this.post,
   });
 
   
@@ -36,21 +36,13 @@ class information extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('ID: ${user.id}'),
+                  Text('ID: ${post.userId}'),
                   SizedBox(height: 10),
-                  Text('Name: ${user.name}'),
+                  Text('Name: ${post.id}'),
                   SizedBox(height: 10),
-                  Text('Username: ${user.username}'),
+                  Text('Username: ${post.title}'),
                   SizedBox(height: 10),
-                  Text('Email: ${user.email}'),
-                  SizedBox(height: 10),
-                  Text('Address: ${user.address}'),
-                  SizedBox(height: 10),
-                  Text('Phone: ${user.phone}'),
-                  SizedBox(height: 10),
-                  Text('Website: ${user.website}'),
-                  SizedBox(height: 10),
-                  Text('Company: ${user.company}'),
+                  Text('Email: ${post.body}'),
                 ],
               ),
             ],

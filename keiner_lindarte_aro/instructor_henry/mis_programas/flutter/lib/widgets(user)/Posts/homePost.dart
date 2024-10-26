@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
+class HomePost extends StatelessWidget {
   final input;
   final changeStateUser;
 
-  const Home({
+  const HomePost({
     super.key, this.input, this.changeStateUser,
   });
 
@@ -29,7 +29,7 @@ class Home extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: changeStateUser,
-            child: Text('Cargar Datos'),
+            child: Text('Cargar post'),
           )
         ],
       ),

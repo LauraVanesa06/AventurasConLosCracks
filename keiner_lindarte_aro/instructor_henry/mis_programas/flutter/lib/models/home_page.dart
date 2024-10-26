@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:main/widgets(home)/users.dart';
+
+import 'package:main/widgets(home)/userButton.dart';
+import 'package:main/widgets(home)/postButton.dart';
 
 import 'package:main/widgets(user)/Users/homeUser.dart';
 import 'package:main/widgets(user)/Posts/homePost.dart';
@@ -10,6 +12,7 @@ import 'package:main/widgets(user)/loading.dart';
 import 'package:main/widgets(user)/errordata.dart';
 
 import 'userdata.dart';
+import 'postdata.dart';
 
 class Choose extends StatefulWidget {
   @override
@@ -39,7 +42,15 @@ class ChooseState extends State<Choose> {
             SizedBox(height: 10),
             Text('¿En que podemos ayudarle?'),
             SizedBox(height: 30),
-            Users(),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                UsersButton(),
+                SizedBox(height: 10),
+                PostButton(),
+              ],
+            ),
+            
           ],
         ),
       )
@@ -49,14 +60,14 @@ class ChooseState extends State<Choose> {
 
 
 
-class Info extends StatefulWidget {
+class UserPage extends StatefulWidget {
   @override
-  InfoState createState() {
-    return InfoState();
+  Userstate createState() {
+    return Userstate();
   }
 }
 
-class InfoState extends State<Info> {
+class Userstate extends State<UserPage> {
   Future<User>? stateChange;
   final TextEditingController input = TextEditingController();
 
@@ -103,6 +114,70 @@ class InfoState extends State<Info> {
                   return informationUser(user: user);
                 } else {
                   return HomeUser(input: input, changeStateUser: changeStateUser);
+                }
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class PostPage extends StatefulWidget {
+  @override
+  Poststate createState() {
+    return Poststate();
+  }
+}
+
+class Poststate extends State<PostPage> {
+  Future<Post>? stateChange;
+  final TextEditingController input = TextEditingController();
+
+  Future<Post> dataHttp(String input) async {
+    var url = Uri.http('jsonplaceholder.typicode.com', 'posts/$input');
+    await Future.delayed(Duration(seconds: 1));
+    var response = await http.get(url);
+
+    if (response.statusCode == 200) {
+      Post post = Post(response.body);
+      return post;
+    } else {
+      throw ('Ha ocurrido un error ${response.statusCode}');
+    }
+  }
+
+  void changeStateUser() {
+    setState(() {
+      stateChange = dataHttp(input.text);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: const Center(child: Text('Posts del Usuario:')),
+          foregroundColor: const Color(0xFFFDFCE4),
+          backgroundColor: const Color.fromARGB(226, 0, 26, 83),
+          ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FutureBuilder(
+              future: stateChange,
+              builder: (BuildContext context, AsyncSnapshot<Post> snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return loading();
+                } else if (snapshot.hasError) {
+                  return errordata(snapshot: snapshot);
+                } else if (snapshot.hasData) {
+                  Post post = snapshot.data!;
+                  return informationPost(post: post);
+                } else {
+                  return HomePost(input: input, changeStateUser: changeStateUser);
                 }
               },
             ),

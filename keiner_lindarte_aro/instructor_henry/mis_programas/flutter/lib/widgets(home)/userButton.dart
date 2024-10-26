@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:main/models/home_page.dart';
 
-class Users extends StatelessWidget {
-  const Users({
+class UsersButton extends StatelessWidget {
+  const UsersButton({
     super.key,
   });
 
@@ -14,7 +14,7 @@ class Users extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Info()),
+              MaterialPageRoute(builder: (context) => UserPage()),
             );
           },
           child: Text('Consultar datos del usuario'),

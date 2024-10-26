@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          Image.network('https://fastly.picsum.photos/id/9/250/250.jpg?hmac=tqDH5wEWHDN76mBIWEPzg1in6egMl49qZeguSaH9_VI'),
+          Image.asset('../assets/consulta.png', width: 200,),
           Container(
             width: 180,
             child: Padding(
@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
               child: TextField(
                 controller: input,
                 decoration: InputDecoration(
-                  labelText: 'Numero de usuario:',
+                  labelText: 'ID del Usuario:',
                   border: OutlineInputBorder()
                 ),
               ),

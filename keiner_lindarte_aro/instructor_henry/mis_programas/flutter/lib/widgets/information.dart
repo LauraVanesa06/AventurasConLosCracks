@@ -3,31 +3,58 @@ import 'package:main/models/userdata.dart';
 
 class information extends StatelessWidget {
 
-  const information({
+  final User user;
+
+  information({
     super.key,
     required this.user,
   });
 
-  final User user;
+  
 
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Column(
-        children: [
-          SizedBox(width: 10.0,),
-          Image.network('https://fastly.picsum.photos/id/9/250/250.jpg?hmac=tqDH5wEWHDN76mBIWEPzg1in6egMl49qZeguSaH9_VI'),
-          SizedBox(width: 10.0,),
-          Text('ID: ${user.id}'),
-          Text('Name: ${user.name}'),
-          Text('Username: ${user.username}'),
-          Text('Email: ${user.email}'),
-          Text('Address: ${user.address}'),
-          Text('Phone: ${user.phone}'),
-          Text('Website: ${user.website}'),
-          Text('Company: ${user.company}'),
-          SizedBox(width: 10.0,)
-        ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 100.0),
+        child: Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Color(0xFF070707),
+                    width: 4
+                  ),
+                  borderRadius: BorderRadius.circular(4)
+                ),
+                child: Image.asset(
+                  '../assets/perfil.jpg', 
+                  width: 200,
+                  )
+              ),
+              SizedBox(height: 40),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('ID: ${user.id}'),
+                  SizedBox(height: 10),
+                  Text('Name: ${user.name}'),
+                  SizedBox(height: 10),
+                  Text('Username: ${user.username}'),
+                  SizedBox(height: 10),
+                  Text('Email: ${user.email}'),
+                  SizedBox(height: 10),
+                  Text('Address: ${user.address}'),
+                  SizedBox(height: 10),
+                  Text('Phone: ${user.phone}'),
+                  SizedBox(height: 10),
+                  Text('Website: ${user.website}'),
+                  SizedBox(height: 10),
+                  Text('Company: ${user.company}'),
+                ],
+              ),
+            ],
+        ),
       ),
     );
   }

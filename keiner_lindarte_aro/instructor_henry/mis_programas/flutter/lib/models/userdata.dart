@@ -48,7 +48,7 @@ class Geo{
   }
   
   String toString(){
-    return '"geo": ["lat": ${lat}, "lng": ${lng}}]';
+    return '"geo": ["lat": ${lat}, "lng": ${lng}]';
   }
 }
 

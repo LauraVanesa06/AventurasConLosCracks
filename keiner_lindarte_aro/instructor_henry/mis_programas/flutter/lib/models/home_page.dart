@@ -21,11 +21,15 @@ class Info extends State<HomePage> {
   Future<User> dataHttp(String input) async{
   
     var url = Uri.http('jsonplaceholder.typicode.com', 'users/$input');
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(Duration(seconds: 1));
     var response = await http.get(url);
-    User user = User(response.body);
 
-    return user;
+    if (response.statusCode == 200){
+      User user = User(response.body);
+      return user;
+    } else{
+      throw Exception('Ha ocurrido un erro!!');
+    }
 
   }
 
@@ -38,7 +42,7 @@ class Info extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           FutureBuilder(
             future: stateChange, 

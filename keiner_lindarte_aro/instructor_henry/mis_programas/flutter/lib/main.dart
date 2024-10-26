@@ -13,11 +13,11 @@ class Myapp extends StatelessWidget{
     return MaterialApp(
       title: 'SENA',
       home: Scaffold(
-        backgroundColor: const Color(0xFFFDFCE4),
+        backgroundColor: const Color.fromARGB(108, 188, 219, 255),
         appBar: AppBar(
           title: const Center(child: Text('DATOS DEL USUARIO:')),
           foregroundColor: const Color(0xFFFDFCE4),
-          backgroundColor: const Color(0xFF4BBDFF),
+          backgroundColor: const Color.fromARGB(226, 0, 26, 83),
           ),
         body: HomePage()
       ),

@@ -1,38 +1,62 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import 'package:main/widgets(user)/loading.dart';
+import 'package:main/widgets(user)/home.dart';
+import 'package:main/widgets(user)/information.dart';
+import 'package:main/widgets(user)/errordata.dart';
 
-import 'package:main/widgets/errordata.dart';
-import 'package:main/widgets/information.dart';
-import 'package:main/widgets/loading.dart';
-import 'package:main/widgets/home.dart';
 import 'userdata.dart';
 
-class HomePage extends StatefulWidget {
+class Choose extends StatefulWidget {
   @override
-  Info createState(){
-    return Info();
+  ChooseState createState() {
+    return ChooseState();
   }
 }
 
-class Info extends State<HomePage> {
+class ChooseState extends State<Choose> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text("Choose Page")),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Info()),
+            );
+          },
+          child: Text('Ir a Info'),
+        ),
+      ),
+    );
+  }
+}
+
+class Info extends StatefulWidget {
+  @override
+  InfoState createState() {
+    return InfoState();
+  }
+}
+
+class InfoState extends State<Info> {
   Future<User>? stateChange;
   final TextEditingController input = TextEditingController();
 
-  Future<User> dataHttp(String input) async{
-  
+  Future<User> dataHttp(String input) async {
     var url = Uri.http('jsonplaceholder.typicode.com', 'users/$input');
     await Future.delayed(Duration(seconds: 1));
     var response = await http.get(url);
 
-
-    if (response.statusCode == 200){
+    if (response.statusCode == 200) {
       User user = User(response.body);
       return user;
     } else {
       throw ('Ha ocurrido un error ${response.statusCode}');
     }
-
   }
 
   void changeStateUser() {
@@ -43,26 +67,30 @@ class Info extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          FutureBuilder(
-            future: stateChange, 
-            builder: (BuildContext context, AsyncSnapshot<User> snapshot){
-              if(snapshot.connectionState == ConnectionState.waiting){
-                return loading();
-              }else if(snapshot.hasError){
-                return errordata(snapshot: snapshot);
-              }else if (snapshot.hasData){
-                User user = snapshot.data!;
-                return information(user: user);
-              }else {
-                return Home(input: input,changeStateUser: changeStateUser);
-              }
-            }
-          )
-        ]
+    return Scaffold(
+      appBar: AppBar(title: Text("Info Page")),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FutureBuilder(
+              future: stateChange,
+              builder: (BuildContext context, AsyncSnapshot<User> snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return loading();
+                } else if (snapshot.hasError) {
+                  return errordata(snapshot: snapshot);
+                } else if (snapshot.hasData) {
+                  User user = snapshot.data!;
+                  return information(user: user);
+                } else {
+                  return Home(input: input, changeStateUser: changeStateUser);
+                }
+              },
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
-

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:main/widgets(user)/home.dart';
 
 import 'models/home_page.dart';
 
@@ -19,7 +20,7 @@ class Myapp extends StatelessWidget{
           foregroundColor: const Color(0xFFFDFCE4),
           backgroundColor: const Color.fromARGB(226, 0, 26, 83),
           ),
-        body: HomePage()
+        body: Choose()
       ),
     );
   }

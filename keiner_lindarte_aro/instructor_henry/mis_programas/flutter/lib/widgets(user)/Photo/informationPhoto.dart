@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:main/models/postdata.dart';
+import 'package:main/models/photodata.dart';
 
-class informationPost extends StatelessWidget {
+class informationPhoto extends StatelessWidget {
 
-  final Post post;
+  final Photo photo;
 
-  informationPost({
+  informationPhoto({
     super.key,
-    required this.post,
+    required this.photo,
   });
 
   
@@ -27,22 +27,21 @@ class informationPost extends StatelessWidget {
                   ),
                   borderRadius: BorderRadius.circular(4)
                 ),
-                child: Image.asset(
-                  '../assets/perfil.jpg', 
-                  width: 200,
-                  )
+                child: Image.network('${photo.url}',width: 200)
               ),
               SizedBox(height: 40),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('UserId: ${post.userId}'),
+                  Text('AlbumId: ${photo.albumId}'),
                   SizedBox(height: 10),
-                  Text('ID: ${post.id}'),
+                  Text('ID: ${photo.id}'),
                   SizedBox(height: 10),
-                  Text('Title: ${post.title}'),
+                  Text('Title: ${photo.title}'),
                   SizedBox(height: 10),
-                  Text('Body: ${post.body}'),
+                  Text('Url: ${photo.url}'),
+                  SizedBox(height: 10),
+                  Text('ThumbnailUrl: ${photo.thumbnailUrl}'),
                 ],
               ),
             ],

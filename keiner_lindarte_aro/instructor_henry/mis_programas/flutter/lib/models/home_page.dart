@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:main/widgets(home)/photoButton.dart';
+
+
 
 import 'package:main/widgets(home)/userButton.dart';
 import 'package:main/widgets(home)/postButton.dart';
 
+import 'package:main/widgets(user)/Photo/homePhoto.dart';
+import 'package:main/widgets(user)/Photo/informationPhoto.dart';
 import 'package:main/widgets(user)/Users/homeUser.dart';
 import 'package:main/widgets(user)/Posts/homePost.dart';
 import 'package:main/widgets(user)/Users/informationUser.dart';
@@ -13,6 +18,8 @@ import 'package:main/widgets(user)/errordata.dart';
 
 import 'userdata.dart';
 import 'postdata.dart';
+import 'photodata.dart';
+
 
 class Choose extends StatefulWidget {
   @override
@@ -46,11 +53,16 @@ class ChooseState extends State<Choose> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 UsersButton(),
-                SizedBox(height: 10),
                 PostButton(),
               ],
             ),
-            
+            SizedBox(height: 30),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                PhotoButton(),
+              ],
+            )
           ],
         ),
       )
@@ -178,6 +190,70 @@ class Poststate extends State<PostPage> {
                   return informationPost(post: post);
                 } else {
                   return HomePost(input: input, changeStateUser: changeStateUser);
+                }
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class PhotoPage extends StatefulWidget {
+  @override
+  PhotoState createState() {
+    return PhotoState();
+  }
+}
+
+class PhotoState extends State<PhotoPage> {
+  Future<Photo>? stateChange;
+  final TextEditingController input = TextEditingController();
+
+  Future<Photo> dataHttp(String input) async {
+    var url = Uri.http('jsonplaceholder.typicode.com', 'photos/$input');
+    await Future.delayed(Duration(seconds: 1));
+    var response = await http.get(url);
+
+    if (response.statusCode == 200) {
+      Photo photo = Photo(response.body);
+      return photo;
+    } else {
+      throw ('Ha ocurrido un error ${response.statusCode}');
+    }
+  }
+
+  void changeStateUser() {
+    setState(() {
+      stateChange = dataHttp(input.text);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: Text('Fotos del Usuario:'),
+          foregroundColor: const Color(0xFFFDFCE4),
+          backgroundColor: const Color.fromARGB(226, 0, 26, 83),
+          ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FutureBuilder(
+              future: stateChange,
+              builder: (BuildContext context, AsyncSnapshot<Photo> snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return loading();
+                } else if (snapshot.hasError) {
+                  return errordata(snapshot: snapshot);
+                } else if (snapshot.hasData) {
+                  Photo photo = snapshot.data!;
+                  return informationPhoto(photo: photo);
+                } else {
+                  return HomePhoto(input: input, changeStateUser: changeStateUser);
                 }
               },
             ),

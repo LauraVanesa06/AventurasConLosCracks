@@ -29,7 +29,7 @@ class HomeUser extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: changeStateUser,
-            child: Text('Cargar Datos'),
+            child: Text('Cargar Usuario'),
           )
         ],
       ),

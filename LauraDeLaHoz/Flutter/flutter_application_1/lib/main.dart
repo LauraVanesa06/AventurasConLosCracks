@@ -17,7 +17,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       home: Scaffold(
         appBar: AppBar(title: Text('SENA')),
-      body:  
+      body:  Column(
+        children[
+          Text('Id: 1'),
+        ],
+        )
       ),
     );
    }

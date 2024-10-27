@@ -21,7 +21,7 @@ class HomePost extends StatelessWidget {
               child: TextField(
                 controller: input,
                 decoration: InputDecoration(
-                  labelText: 'ID del Usuario:',
+                  labelText: 'ID del Post:',
                   border: OutlineInputBorder()
                 ),
               ),

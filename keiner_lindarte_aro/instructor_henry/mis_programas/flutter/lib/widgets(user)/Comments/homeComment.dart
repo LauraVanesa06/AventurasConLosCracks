@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class HomePhoto extends StatelessWidget {
+class HomeComment extends StatelessWidget {
   final input;
   final changeStateUser;
 
-  const HomePhoto({
+  const HomeComment({
     super.key, this.input, this.changeStateUser,
   });
 
@@ -21,7 +21,7 @@ class HomePhoto extends StatelessWidget {
               child: TextField(
                 controller: input,
                 decoration: InputDecoration(
-                  labelText: 'ID de la Foto:',
+                  labelText: 'ID del Comentario:',
                   border: OutlineInputBorder()
                 ),
               ),
@@ -29,7 +29,7 @@ class HomePhoto extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: changeStateUser,
-            child: Text('Cargar foto'),
+            child: Text('Cargar comentario'),
           )
         ],
       ),

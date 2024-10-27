@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+
 import 'package:main/widgets(home)/photoButton.dart';
-
-
-
+import 'package:main/widgets(home)/commentButton.dart';
 import 'package:main/widgets(home)/userButton.dart';
 import 'package:main/widgets(home)/postButton.dart';
-
+import 'package:main/widgets(user)/Comments/homeComment.dart';
+import 'package:main/widgets(user)/Comments/informationComment.dart';
 import 'package:main/widgets(user)/Photo/homePhoto.dart';
 import 'package:main/widgets(user)/Photo/informationPhoto.dart';
 import 'package:main/widgets(user)/Users/homeUser.dart';
@@ -15,11 +15,10 @@ import 'package:main/widgets(user)/Users/informationUser.dart';
 import 'package:main/widgets(user)/Posts/informationPost.dart';
 import 'package:main/widgets(user)/loading.dart';
 import 'package:main/widgets(user)/errordata.dart';
-
 import 'userdata.dart';
 import 'postdata.dart';
 import 'photodata.dart';
-
+import 'commentdata.dart';
 
 class Choose extends StatefulWidget {
   @override
@@ -61,6 +60,7 @@ class ChooseState extends State<Choose> {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 PhotoButton(),
+                CommentButton()
               ],
             )
           ],
@@ -254,6 +254,70 @@ class PhotoState extends State<PhotoPage> {
                   return informationPhoto(photo: photo);
                 } else {
                   return HomePhoto(input: input, changeStateUser: changeStateUser);
+                }
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class CommentPage extends StatefulWidget {
+  @override
+  CommentState createState() {
+    return CommentState();
+  }
+}
+
+class CommentState extends State<CommentPage> {
+  Future<Comment>? stateChange;
+  final TextEditingController input = TextEditingController();
+
+  Future<Comment> dataHttp(String input) async {
+    var url = Uri.http('jsonplaceholder.typicode.com', 'comments/$input');
+    await Future.delayed(Duration(seconds: 1));
+    var response = await http.get(url);
+
+    if (response.statusCode == 200) {
+      Comment comment = Comment(response.body);
+      return comment;
+    } else {
+      throw ('Ha ocurrido un error ${response.statusCode}');
+    }
+  }
+
+  void changeStateUser() {
+    setState(() {
+      stateChange = dataHttp(input.text);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: Text('Fotos del Usuario:'),
+          foregroundColor: const Color(0xFFFDFCE4),
+          backgroundColor: const Color.fromARGB(226, 0, 26, 83),
+          ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FutureBuilder(
+              future: stateChange,
+              builder: (BuildContext context, AsyncSnapshot<Comment> snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return loading();
+                } else if (snapshot.hasError) {
+                  return errordata(snapshot: snapshot);
+                } else if (snapshot.hasData) {
+                  Comment comment = snapshot.data!;
+                  return informationComment(comment: comment);
+                } else {
+                  return HomeComment(input: input, changeStateUser: changeStateUser);
                 }
               },
             ),

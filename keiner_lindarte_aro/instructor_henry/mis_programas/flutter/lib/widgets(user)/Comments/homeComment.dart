@@ -19,6 +19,7 @@ class HomeComment extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 30.0),
               child: TextField(
+                keyboardType: TextInputType.number,
                 controller: input,
                 decoration: InputDecoration(
                   labelText: 'ID del Comentario:',

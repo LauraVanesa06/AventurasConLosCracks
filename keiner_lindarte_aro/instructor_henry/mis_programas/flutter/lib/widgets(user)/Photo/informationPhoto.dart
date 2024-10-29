@@ -16,7 +16,7 @@ class informationPhoto extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 100.0),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
             children: [
               Container(

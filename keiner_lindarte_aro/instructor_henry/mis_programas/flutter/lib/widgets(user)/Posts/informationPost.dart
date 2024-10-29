@@ -16,7 +16,7 @@ class informationPost extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 100.0),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0),
         child: Column(
             children: [
               Container(
@@ -28,7 +28,7 @@ class informationPost extends StatelessWidget {
                   borderRadius: BorderRadius.circular(4)
                 ),
                 child: Image.asset(
-                  '../assets/perfil.jpg', 
+                  'assets/perfil.jpg', 
                   width: 200,
                   )
               ),

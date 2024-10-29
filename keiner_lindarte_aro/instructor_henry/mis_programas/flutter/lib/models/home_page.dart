@@ -40,7 +40,7 @@ class ChooseState extends State<Choose> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('../assets/consultahome.jpg',
+            Image.asset('assets/consultahome.jpg',
               width: 400,
             ),
             SizedBox(height: 30),
@@ -48,21 +48,13 @@ class ChooseState extends State<Choose> {
             SizedBox(height: 10),
             Text('¿En que podemos ayudarle?'),
             SizedBox(height: 30),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                UsersButton(),
-                PostButton(),
-              ],
-            ),
-            SizedBox(height: 30),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                PhotoButton(),
-                CommentButton()
-              ],
-            )
+            UsersButton(),
+            SizedBox(height: 15),
+            PostButton(),
+            SizedBox(height: 15),
+            PhotoButton(),
+            SizedBox(height: 15),
+            CommentButton()
           ],
         ),
       )

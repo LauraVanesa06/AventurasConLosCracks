@@ -13,7 +13,7 @@ class HomeUser extends StatelessWidget {
     return Center(
       child: Column(
         children: [
-          Image.asset('../assets/consulta.png', width: 200,),
+          Image.asset('assets/consulta.png', width: 200,),
           Container(
             width: 180,
             child: Padding(

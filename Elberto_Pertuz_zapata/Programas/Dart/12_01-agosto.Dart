@@ -22,7 +22,7 @@ void calcular() {
     print(" 2: RESTAR");
     print(" 3: MULTIPLICAR");
     print(" 4: DIVIDIR");
-    int kkk = int.parse(stdin.readLineSync()!);
+    int ope = int.parse(stdin.readLineSync()!);
 
     double suma( double num_1, double num_2 ){
       return num_1 + num_2;
@@ -41,13 +41,13 @@ void calcular() {
     }
 
 
-    if(kkk == 1){
+    if(ope == 1){
       resultado = suma( num_1, num_2 );
-    }else if ( kkk == 2) {
+    }else if ( ope == 2) {
       resultado = resta( num_1, num_2 );
-    }else if ( kkk == 3) {
+    }else if ( ope == 3) {
       resultado = multiplicar( num_1, num_2 );
-    }else if ( kkk == 4) {
+    }else if ( ope == 4) {
       resultado = dividir( num_1, num_2 );
     }else{
       print("error");
@@ -57,5 +57,4 @@ void calcular() {
   
     
   }
-  
 }

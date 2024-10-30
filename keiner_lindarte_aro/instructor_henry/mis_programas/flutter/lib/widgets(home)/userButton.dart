@@ -14,7 +14,7 @@ class UsersButton extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => UserPage()),
+              MaterialPageRoute(builder: (context) => const UserPage()),
             );
           },
           child: const Text('Consultar datos del usuario'),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'Pages/Principal.dart';
 void main() {
-  runApp(Fusion());
+  runApp(const Fusion());
 }
 
 class Fusion extends StatelessWidget {

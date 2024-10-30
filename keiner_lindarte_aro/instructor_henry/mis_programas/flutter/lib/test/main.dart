@@ -6,7 +6,7 @@ import 'package:main/test/widgets/loading.dart';
 import 'package:main/test/widgets/success.dart';
 
 void main(){
-  runApp(Myapp());
+  runApp(const Myapp());
 }
 
 class Myapp extends StatelessWidget {

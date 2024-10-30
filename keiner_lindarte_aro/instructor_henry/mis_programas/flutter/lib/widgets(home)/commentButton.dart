@@ -15,7 +15,7 @@ class CommentButton extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => CommentPage()),
+              MaterialPageRoute(builder: (context) => const CommentPage()),
             );
           },
           child: const Text('Consultar comentarios del usuario'),

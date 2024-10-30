@@ -1,16 +1,21 @@
 import 'dart:convert';
 
 class Post {
-  int? userid;
-  int? id;
-  String? title;
-  String? body;
+  final int? userid;
+  final int? id;
+  final String? title;
+  final String? body;
 
-  Post(String jsonString) {
-    Map<String, dynamic> dato = jsonDecode(jsonString);
-    this.userid = dato['userid'];
-    this.id = dato['id'];
-    this.title = dato['title'];
-    this.body = dato['body'];
+  Post({this.userid, this.id, this.title, this.body});
+
+  // Método factory para crear una instancia de Post a partir de un String JSON
+  factory Post.fromJson(String jsonString) {
+    final Map<String, dynamic> data = jsonDecode(jsonString);
+    return Post(
+      userid: data['userid'],
+      id: data['id'],
+      title: data['title'],
+      body: data['body'],
+    );
   }
 }

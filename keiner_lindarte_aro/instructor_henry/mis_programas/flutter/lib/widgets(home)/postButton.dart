@@ -15,10 +15,10 @@ class PostButton extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => PostPage()),
+              MaterialPageRoute(builder: (context) => const PostPage()),
             );
           },
-          child: Text('Consultar posts del usuario'),
+          child: const Text('Consultar posts del usuario'),
         ),
       ],
     );

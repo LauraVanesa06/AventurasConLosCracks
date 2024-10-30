@@ -10,11 +10,11 @@ class Comment {
 
   Comment(String jsonString){
     Map<String, dynamic> data = jsonDecode(jsonString);
-    this.postId = data['postId'];
-    this.id = data['id'];
-    this.name = data['name'];
-    this.email = data['email'];
-    this.body = data['body'];
+    postId = data['postId'];
+    id = data['id'];
+    name = data['name'];
+    email = data['email'];
+    body = data['body'];
   }
 
 }

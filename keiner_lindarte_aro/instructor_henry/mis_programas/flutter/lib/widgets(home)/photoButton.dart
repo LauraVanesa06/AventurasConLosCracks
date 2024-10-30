@@ -15,10 +15,10 @@ class PhotoButton extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => PhotoPage()),
+              MaterialPageRoute(builder: (context) => const PhotoPage()),
             );
           },
-          child: Text('Consultar fotos del usuario'),
+          child: const Text('Consultar fotos del usuario'),
         ),
       ],
     );

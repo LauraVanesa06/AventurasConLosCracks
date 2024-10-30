@@ -14,10 +14,10 @@ class UsersButton extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => UserPage()),
+              MaterialPageRoute(builder: (context) => const UserPage()),
             );
           },
-          child: Text('Consultar datos del usuario'),
+          child: const Text('Consultar datos del usuario'),
         ),
       ],
     );

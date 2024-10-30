@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget { 
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+ 
   //clase abstracta que define pero no implementa.
   @override
   Widget build(BuildContext context) {
@@ -15,17 +17,17 @@ class MyApp extends StatelessWidget {
       // polimorfismo se define variable d eun tipo padre y el objeto es de otro tipo hijo.
         title: 'Flutter Demo',
         home: Scaffold(
-            appBar: AppBar(title: Text('SENA')),
+            appBar: AppBar(title: const Text('SENA')),
             body: Column(
                children: [
-                SizedBox(height: 20.0,),
+                const SizedBox(height: 20.0,),
                 Image.network(
                   'https://media.giphy.com/media/65LrvAMGU650TvPgs5/giphy.gif?raw=true',
                   width: 300.0,
                   //sucess todo bien
                 ),
-                Text('llll'),
-                Row( children:[
+                const Text('llll'),
+                const Row( children:[
                   Icon(Icons.favorite),
                   Icon(Icons.favorite),
                 ]

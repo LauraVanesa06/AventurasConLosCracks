@@ -5,7 +5,7 @@ import 'package:main/test/models/post.dart';
 class Success extends StatelessWidget {
   Post post;
   
-  Success({required this.post});
+  Success({super.key, required this.post});
 
   @override
   Widget build(BuildContext context) {

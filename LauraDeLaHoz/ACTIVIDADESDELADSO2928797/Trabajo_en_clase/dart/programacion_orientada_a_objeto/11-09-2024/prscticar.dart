@@ -7,9 +7,9 @@ void main(){
   Animal a = Dog();
  Animal b = Cat();
   if(a is Dog){
-    Dog firulays = a as Dog;
+    Dog firulays = a;
   } else if(b is Cat){
-    Cat firulays = b as Cat;
+    Cat firulays = b;
 
   }
 }

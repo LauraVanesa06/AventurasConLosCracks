@@ -4,7 +4,7 @@ class errordata extends StatelessWidget {
   
   final AsyncSnapshot snapshot;
 
-  errordata({
+  const errordata({
     super.key,required this.snapshot
   });
 

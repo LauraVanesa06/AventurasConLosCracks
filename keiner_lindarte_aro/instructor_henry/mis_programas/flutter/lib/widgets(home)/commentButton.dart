@@ -15,10 +15,10 @@ class CommentButton extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => CommentPage()),
+              MaterialPageRoute(builder: (context) => const CommentPage()),
             );
           },
-          child: Text('Consultar comentarios del usuario'),
+          child: const Text('Consultar comentarios del usuario'),
         ),
       ],
     );

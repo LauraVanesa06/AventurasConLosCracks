@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
 import 'Pages/Principal.dart';
 void main() {
-  runApp(Fusion());
+  runApp(const Fusion());
 }
 
 class Fusion extends StatelessWidget {
+  const Fusion({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Datos Usuarios',
         home: Scaffold(
-            appBar: AppBar(title: Text('Users')),
-            body: Principal()));
+            appBar: AppBar(title: const Text('Users')),
+            body: const Principal()));
   }
 }
 //Listo

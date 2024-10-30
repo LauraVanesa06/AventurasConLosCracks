@@ -6,13 +6,14 @@ class Company{
   String? bs;
   
   Company(Map company){
-    this.name = company['name'];
-    this.catchPhrase = company['catchPhrase'];
-    this.bs = company['bs'];
+    name = company['name'];
+    catchPhrase = company['catchPhrase'];
+    bs = company['bs'];
   }
   
+  @override
   String toString(){
-    return '["name": ${name}, "catchPhrase": ${catchPhrase}, "bs": ${bs}]';
+    return '["name": $name, "catchPhrase": $catchPhrase, "bs": $bs]';
   }
   
 }
@@ -25,15 +26,16 @@ class Address{
   Geo? geo;
   
   Address(Map address){
-    this.city = address['city'];
-    this.suite = address['suite'];
-    this.street = address['street'];
-    this.zipcode = address['zipcode'];
-    this.geo = new Geo(address['geo']);
+    city = address['city'];
+    suite = address['suite'];
+    street = address['street'];
+    zipcode = address['zipcode'];
+    geo = Geo(address['geo']);
   }
   
+  @override
   String toString(){
-    return '["city": ${city}, "suite": ${suite}, "street": ${street}, "zipcode": ${zipcode}, ${geo}]';
+    return '["city": $city, "suite": $suite, "street": $street, "zipcode": $zipcode, $geo]';
   }
   
 }
@@ -43,12 +45,13 @@ class Geo{
   String? lng;
   
   Geo(Map geo){
-    this.lat = geo['lat'];
-    this.lng = geo['lng'];
+    lat = geo['lat'];
+    lng = geo['lng'];
   }
   
+  @override
   String toString(){
-    return '"geo": ["lat": ${lat}, "lng": ${lng}]';
+    return '"geo": ["lat": $lat, "lng": $lng]';
   }
 }
 
@@ -66,14 +69,14 @@ class User{
   
   User(String jsonString){
     Map<String, dynamic> user = jsonDecode(jsonString);
-    this.id = user['id'];
-    this.name = user['name'];
-    this.username = user['username'];
-    this.email = user['email'];
-    this.phone = user['phone'];
-    this.website = user['website'];
-    this.address = new Address(user['address']);
-    this.company = new Company(user['company']); 
+    id = user['id'];
+    name = user['name'];
+    username = user['username'];
+    email = user['email'];
+    phone = user['phone'];
+    website = user['website'];
+    address = Address(user['address']);
+    company = Company(user['company']); 
   }
   
 }

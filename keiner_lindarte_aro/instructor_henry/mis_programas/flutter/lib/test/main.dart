@@ -6,14 +6,16 @@ import 'package:main/test/widgets/loading.dart';
 import 'package:main/test/widgets/success.dart';
 
 void main(){
-  runApp(Myapp());
+  runApp(const Myapp());
 }
 
 class Myapp extends StatelessWidget {
+  const Myapp({super.key});
+
 
   Future<Post> solicitud() async{
     var url = Uri.http('jsonplaceholder.typicode.com', 'posts/1');
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 2));
     var response = await http.get(url);
 
     
@@ -33,7 +35,7 @@ class Myapp extends StatelessWidget {
           future: solicitud(),
           builder: (BuildContext contex, AsyncSnapshot<Post> snapshot){
             if(snapshot.connectionState == ConnectionState.waiting){
-              return loading();
+              return const loading();
             } else if (snapshot.hasError){
               throw Exception('Error ${snapshot.error}');
             } else {

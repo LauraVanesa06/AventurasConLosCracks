@@ -18,7 +18,7 @@ class PhotoButton extends StatelessWidget {
               MaterialPageRoute(builder: (context) => PhotoPage()),
             );
           },
-          child: Text('Consultar fotos del usuario'),
+          child: const Text('Consultar fotos del usuario'),
         ),
       ],
     );

@@ -12,7 +12,7 @@ void main(){
 
   if(figura is Cuadrado){
   //casting para acceder a metodos y figuras de la otra clase. 
-    Cuadrado c = figura as Cuadrado;
+    Cuadrado c = figura;
 
   }
 

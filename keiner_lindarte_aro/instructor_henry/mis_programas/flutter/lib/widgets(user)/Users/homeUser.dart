@@ -14,14 +14,14 @@ class HomeUser extends StatelessWidget {
       child: Column(
         children: [
           Image.asset('assets/consulta.png', width: 200,),
-          Container(
+          SizedBox(
             width: 180,
             child: Padding(
               padding: const EdgeInsets.symmetric(vertical: 30.0),
               child: TextField(
                 keyboardType: TextInputType.number,
                 controller: input,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   labelText: 'ID del Usuario:',
                   border: OutlineInputBorder()
                 ),
@@ -30,7 +30,7 @@ class HomeUser extends StatelessWidget {
           ),
           ElevatedButton(
             onPressed: changeStateUser,
-            child: Text('Cargar Usuario'),
+            child: const Text('Cargar Usuario'),
           )
         ],
       ),

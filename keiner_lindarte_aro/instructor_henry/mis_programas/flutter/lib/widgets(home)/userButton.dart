@@ -17,7 +17,7 @@ class UsersButton extends StatelessWidget {
               MaterialPageRoute(builder: (context) => UserPage()),
             );
           },
-          child: Text('Consultar datos del usuario'),
+          child: const Text('Consultar datos del usuario'),
         ),
       ],
     );

@@ -8,7 +8,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-   Widget build(BuildContext context) {
+  const MyApp({super.key});
+
+   @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       //control espacio muestra las opciones que podemos utilizar
       //materialapp es otra clase en donde se instancia un objeto de tipo
@@ -16,10 +19,10 @@ class MyApp extends StatelessWidget {
       // polimorfismo se define variable d eun tipo padre y el objeto es de otro tipo hijo.
       title: 'Flutter Demo',
       home: Scaffold(
-        appBar: AppBar(title: Text('SENA')),
+        appBar: AppBar(title: const Text('SENA')),
       body:  Column(
         children[
-          Text('Id: 1'),
+          const Text('Id: 1'),
         ],
         )
       ),

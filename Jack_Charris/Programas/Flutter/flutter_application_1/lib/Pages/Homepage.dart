@@ -14,16 +14,16 @@ class Homepage extends StatelessWidget {
               'https://media.giphy.com/media/65LrvAMGU650TvPgs5/giphy.gif?raw=true',
           ),
 
-        Text('Id: 1'),
-        Text('Name: Jack Charris'),
-        Text('Username: Jack007'),
-        Text('Email: charrisjack24@gmail.com'),
-        Text('Address: {JsonString}'),
-        Text('Phone: 3045941877'),
-        Text('Website: Web'),
-        Text('Company: {JsonString}'),
-        ElevatedButton(onPressed: (){}, child: Text('Buscar')),
-        CircularProgressIndicator.adaptive()
+        const Text('Id: 1'),
+        const Text('Name: Jack Charris'),
+        const Text('Username: Jack007'),
+        const Text('Email: charrisjack24@gmail.com'),
+        const Text('Address: {JsonString}'),
+        const Text('Phone: 3045941877'),
+        const Text('Website: Web'),
+        const Text('Company: {JsonString}'),
+        ElevatedButton(onPressed: (){}, child: const Text('Buscar')),
+        const CircularProgressIndicator.adaptive()
       ],
     );
   }

@@ -47,28 +47,28 @@ class _PrincipalState extends State<Principal> {
       padding: const EdgeInsets.all(16.0),
       child: Column(
         children: [
-          if (isLoading) CircularProgressIndicator(),
+          if (isLoading) const CircularProgressIndicator(),
 
           // Mostrar datos solo si se ha cargado un usuario
           if (user != null) ...[
             Image.network(
               'https://somebooks.es/wp-content/uploads/2018/12/Poner-una-imagen-a-la-cuenta-de-usuario-en-Windows-10-000.png',
             ),
-            SizedBox(height: 16),
-            Text('Id: ${user!.id}', style: TextStyle(fontSize: 18)),
-            Text('Name: ${user!.name}', style: TextStyle(fontSize: 18)),
-            Text('Username: ${user!.username}', style: TextStyle(fontSize: 18)),
-            Text('Email: ${user!.email}', style: TextStyle(fontSize: 18)),
-            Text('Address: ${user!.address?.street}, ${user!.address?.city}', style: TextStyle(fontSize: 18)),
-            Text('Phone: ${user!.phone}', style: TextStyle(fontSize: 18)),
-            Text('Website: ${user!.website}', style: TextStyle(fontSize: 18)),
-            Text('Company: ${user!.company?.name}', style: TextStyle(fontSize: 18)),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
+            Text('Id: ${user!.id}', style: const TextStyle(fontSize: 18)),
+            Text('Name: ${user!.name}', style: const TextStyle(fontSize: 18)),
+            Text('Username: ${user!.username}', style: const TextStyle(fontSize: 18)),
+            Text('Email: ${user!.email}', style: const TextStyle(fontSize: 18)),
+            Text('Address: ${user!.address?.street}, ${user!.address?.city}', style: const TextStyle(fontSize: 18)),
+            Text('Phone: ${user!.phone}', style: const TextStyle(fontSize: 18)),
+            Text('Website: ${user!.website}', style: const TextStyle(fontSize: 18)),
+            Text('Company: ${user!.company?.name}', style: const TextStyle(fontSize: 18)),
+            const SizedBox(height: 16),
           ],
 
           ElevatedButton(
             onPressed: fetchUserData, // Solo se llama aquí
-            child: Text('Buscar'),
+            child: const Text('Buscar'),
           ),
         ],
       ),

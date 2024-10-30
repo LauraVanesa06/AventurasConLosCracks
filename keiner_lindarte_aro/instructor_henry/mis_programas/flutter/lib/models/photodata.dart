@@ -10,11 +10,11 @@ class Photo {
 
   Photo(String jsonString){
     Map<String, dynamic> data = jsonDecode(jsonString);
-    this.albumId = data['albumId'];
-    this.id = data['id'];
-    this.title = data['title'];
-    this.url = data['url'];
-    this.thumbnailUrl = data['thumbnailUrl'];
+    albumId = data['albumId'];
+    id = data['id'];
+    title = data['title'];
+    url = data['url'];
+    thumbnailUrl = data['thumbnailUrl'];
   }
 
 }

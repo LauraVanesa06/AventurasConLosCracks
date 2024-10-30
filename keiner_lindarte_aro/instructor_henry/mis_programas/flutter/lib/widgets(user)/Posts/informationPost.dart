@@ -5,7 +5,7 @@ class informationPost extends StatelessWidget {
 
   final Post post;
 
-  informationPost({
+  const informationPost({
     super.key,
     required this.post,
   });
@@ -22,7 +22,7 @@ class informationPost extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: Color(0xFF070707),
+                    color: const Color(0xFF070707),
                     width: 4
                   ),
                   borderRadius: BorderRadius.circular(4)
@@ -32,16 +32,16 @@ class informationPost extends StatelessWidget {
                   width: 200,
                   )
               ),
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text('UserId: ${post.userId}'),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text('ID: ${post.id}'),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text('Title: ${post.title}'),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text('Body: ${post.body}'),
                 ],
               ),

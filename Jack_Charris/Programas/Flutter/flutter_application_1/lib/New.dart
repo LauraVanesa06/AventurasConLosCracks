@@ -9,6 +9,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
 
   Future<Post> fetchData() async {
     final url = Uri.http('https://jsonplaceholder.typicode.com/posts/1');
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
             builder: (BuildContext context, AsyncSnapshot<Post> snapshot){
 
               if (snapshot.connectionState == ConnectionState.waiting){
-                return Center(child: CircularProgressIndicator());
+                return const Center(child: CircularProgressIndicator());
 
               }
 

@@ -21,6 +21,8 @@ import 'photodata.dart';
 import 'commentdata.dart';
 
 class Choose extends StatefulWidget {
+  const Choose({super.key});
+
   @override
   ChooseState createState() {
     return ChooseState();
@@ -43,18 +45,18 @@ class ChooseState extends State<Choose> {
             Image.asset('assets/consultahome.jpg',
               width: 400,
             ),
-            SizedBox(height: 30),
-            Text('Hola, gracias por solicitar nuestros servicios.'),
-            SizedBox(height: 10),
-            Text('¿En que podemos ayudarle?'),
-            SizedBox(height: 30),
-            UsersButton(),
-            SizedBox(height: 15),
-            PostButton(),
-            SizedBox(height: 15),
-            PhotoButton(),
-            SizedBox(height: 15),
-            CommentButton()
+            const SizedBox(height: 30),
+            const Text('Hola, gracias por solicitar nuestros servicios.'),
+            const SizedBox(height: 10),
+            const Text('¿En que podemos ayudarle?'),
+            const SizedBox(height: 30),
+            const UsersButton(),
+            const SizedBox(height: 15),
+            const PostButton(),
+            const SizedBox(height: 15),
+            const PhotoButton(),
+            const SizedBox(height: 15),
+            const CommentButton()
           ],
         ),
       )
@@ -65,6 +67,8 @@ class ChooseState extends State<Choose> {
 
 
 class UserPage extends StatefulWidget {
+  const UserPage({super.key});
+
   @override
   Userstate createState() {
     return Userstate();
@@ -77,7 +81,7 @@ class Userstate extends State<UserPage> {
 
   Future<User> dataHttp(String input) async {
     var url = Uri.http('jsonplaceholder.typicode.com', 'users/$input');
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 1));
     var response = await http.get(url);
 
     if (response.statusCode == 200) {
@@ -98,7 +102,7 @@ class Userstate extends State<UserPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Datos del Usuario:'),
+          title: const Text('Datos del Usuario:'),
           foregroundColor: const Color(0xFFFDFCE4),
           backgroundColor: const Color.fromARGB(226, 0, 26, 83),
           ),
@@ -110,7 +114,7 @@ class Userstate extends State<UserPage> {
               future: stateChange,
               builder: (BuildContext context, AsyncSnapshot<User> snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return loading();
+                  return const loading();
                 } else if (snapshot.hasError) {
                   return errordata(snapshot: snapshot);
                 } else if (snapshot.hasData) {
@@ -129,6 +133,8 @@ class Userstate extends State<UserPage> {
 }
 
 class PostPage extends StatefulWidget {
+  const PostPage({super.key});
+
   @override
   Poststate createState() {
     return Poststate();
@@ -141,7 +147,7 @@ class Poststate extends State<PostPage> {
 
   Future<Post> dataHttp(String input) async {
     var url = Uri.http('jsonplaceholder.typicode.com', 'posts/$input');
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 1));
     var response = await http.get(url);
 
     if (response.statusCode == 200) {
@@ -162,7 +168,7 @@ class Poststate extends State<PostPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Posts del Usuario:'),
+          title: const Text('Posts del Usuario:'),
           foregroundColor: const Color(0xFFFDFCE4),
           backgroundColor: const Color.fromARGB(226, 0, 26, 83),
           ),
@@ -174,7 +180,7 @@ class Poststate extends State<PostPage> {
               future: stateChange,
               builder: (BuildContext context, AsyncSnapshot<Post> snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return loading();
+                  return const loading();
                 } else if (snapshot.hasError) {
                   return errordata(snapshot: snapshot);
                 } else if (snapshot.hasData) {
@@ -193,6 +199,8 @@ class Poststate extends State<PostPage> {
 }
 
 class PhotoPage extends StatefulWidget {
+  const PhotoPage({super.key});
+
   @override
   PhotoState createState() {
     return PhotoState();
@@ -205,7 +213,7 @@ class PhotoState extends State<PhotoPage> {
 
   Future<Photo> dataHttp(String input) async {
     var url = Uri.http('jsonplaceholder.typicode.com', 'photos/$input');
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 1));
     var response = await http.get(url);
 
     if (response.statusCode == 200) {
@@ -226,7 +234,7 @@ class PhotoState extends State<PhotoPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Fotos del Usuario:'),
+          title: const Text('Fotos del Usuario:'),
           foregroundColor: const Color(0xFFFDFCE4),
           backgroundColor: const Color.fromARGB(226, 0, 26, 83),
           ),
@@ -238,7 +246,7 @@ class PhotoState extends State<PhotoPage> {
               future: stateChange,
               builder: (BuildContext context, AsyncSnapshot<Photo> snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return loading();
+                  return const loading();
                 } else if (snapshot.hasError) {
                   return errordata(snapshot: snapshot);
                 } else if (snapshot.hasData) {
@@ -257,6 +265,8 @@ class PhotoState extends State<PhotoPage> {
 }
 
 class CommentPage extends StatefulWidget {
+  const CommentPage({super.key});
+
   @override
   CommentState createState() {
     return CommentState();
@@ -269,7 +279,7 @@ class CommentState extends State<CommentPage> {
 
   Future<Comment> dataHttp(String input) async {
     var url = Uri.http('jsonplaceholder.typicode.com', 'comments/$input');
-    await Future.delayed(Duration(seconds: 1));
+    await Future.delayed(const Duration(seconds: 1));
     var response = await http.get(url);
 
     if (response.statusCode == 200) {
@@ -290,7 +300,7 @@ class CommentState extends State<CommentPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text('Fotos del Usuario:'),
+          title: const Text('Fotos del Usuario:'),
           foregroundColor: const Color(0xFFFDFCE4),
           backgroundColor: const Color.fromARGB(226, 0, 26, 83),
           ),
@@ -302,7 +312,7 @@ class CommentState extends State<CommentPage> {
               future: stateChange,
               builder: (BuildContext context, AsyncSnapshot<Comment> snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
-                  return loading();
+                  return const loading();
                 } else if (snapshot.hasError) {
                   return errordata(snapshot: snapshot);
                 } else if (snapshot.hasData) {

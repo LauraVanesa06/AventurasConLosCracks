@@ -13,16 +13,16 @@ class Homepage extends StatelessWidget {
         Image.network(
           'https://media.giphy.com/media/65LrvAMGU650TvPgs5/giphy.gif?raw=true',
         ),
-        Text('Id: 1'),
-        Text('Name: ...'),
-        Text('Username: ...'),
-        Text('Email: ...'),
-        Text('Address: ...'), 
-        Text('Phone: ...'),
-        Text('Website: .'),
-        Text('Company: ..'),
-        ElevatedButton(onPressed: (){}, child: Text('Enviar')),
-        CircularProgressIndicator.adaptive()
+        const Text('Id: 1'),
+        const Text('Name: ...'),
+        const Text('Username: ...'),
+        const Text('Email: ...'),
+        const Text('Address: ...'), 
+        const Text('Phone: ...'),
+        const Text('Website: .'),
+        const Text('Company: ..'),
+        ElevatedButton(onPressed: (){}, child: const Text('Enviar')),
+        const CircularProgressIndicator.adaptive()
       ],
     );
   }

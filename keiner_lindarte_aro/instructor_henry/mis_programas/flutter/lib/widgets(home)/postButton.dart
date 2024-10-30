@@ -18,7 +18,7 @@ class PostButton extends StatelessWidget {
               MaterialPageRoute(builder: (context) => PostPage()),
             );
           },
-          child: Text('Consultar posts del usuario'),
+          child: const Text('Consultar posts del usuario'),
         ),
       ],
     );

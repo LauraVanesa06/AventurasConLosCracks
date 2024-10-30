@@ -4,12 +4,12 @@ import 'package:flutter_application_1/models/post.dart';
 class Success extends StatelessWidget {
       Post post;
 
-  Success({ required this.post});
+  Success({super.key,  required this.post});
 
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      SizedBox(
+      const SizedBox(
         height: 20.0,
       ),
       Image.network(
@@ -22,7 +22,7 @@ class Success extends StatelessWidget {
       Text(post.title!),
 
 
-      Row(children: [
+      const Row(children: [
         Icon(Icons.favorite),
         Icon(Icons.favorite),
       ])

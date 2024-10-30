@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'Pages/post.dart';
+import 'Pages/posts.dart';
+import 'Pages/loading.dart';
 import 'Pages/success.dart';
 
 void main() {
@@ -31,9 +32,10 @@ class MyApp extends StatelessWidget {
           future: fetchData(),
           builder: (BuildContext context, AsyncSnapshot<Post> snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
+              return const loading();
             } else if (snapshot.hasError) {
-              return Center(child: Text('Error: ${snapshot.error}'));
+              // return Center(child: Text('Error: ${snapshot.error}'));
+              throw Exception('Error ${snapshot.error}');
             } else {
               // Ya no necesitamos la variable `post` aquí
               return Success(post: snapshot.data!);

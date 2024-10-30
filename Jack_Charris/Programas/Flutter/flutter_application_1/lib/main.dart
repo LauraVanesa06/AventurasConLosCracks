@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'Pages/Homepage.dart';
 
 void main() {
@@ -15,6 +14,8 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         home: Scaffold(
             appBar: AppBar(title: const Text('SENA')),
-            body: const Homepage()));
+            body: const Homepage()
+        )
+    );
   }
 }

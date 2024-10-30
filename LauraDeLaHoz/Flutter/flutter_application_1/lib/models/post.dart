@@ -7,7 +7,7 @@ class Post {
   String? body;
 
   Post(String jsonString) {
-    Map data = jsonDecode(jsonString);
+    Map <String, dynamic> data = jsonDecode(jsonString);
     this.userId = data[userId];
     this.id = data[id];
     this.title = data[title];

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Pages/Principal.dart';
+import 'Pages/principal.dart';
 void main() {
   runApp(const Fusion());
 }

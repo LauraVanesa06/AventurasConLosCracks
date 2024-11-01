@@ -4,6 +4,8 @@ import 'main.dart';
 class InicioPage extends StatelessWidget {
   final TextEditingController _controller = TextEditingController();
 
+  InicioPage({super.key});
+
   void _navigateToMain(BuildContext context) {
     final postId = _controller.text;
     if (postId.isNotEmpty && int.tryParse(postId) != null) {

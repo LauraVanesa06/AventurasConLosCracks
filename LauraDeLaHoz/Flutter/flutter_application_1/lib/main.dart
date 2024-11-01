@@ -8,6 +8,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   //clase abstracta que define pero no implementa.
   Future<Post> fetchdata() async {
     final url = Uri.parse('https://jsonplaceholder.typicode.com/posts/1');
@@ -27,13 +29,13 @@ class MyApp extends StatelessWidget {
       // polimorfismo se define variable d eun tipo padre y el objeto es de otro tipo hijo 
       title: 'Flutter Demo',
       home: Scaffold(
-        appBar: AppBar( title: Text('titulo')),
+        appBar: AppBar( title: const Text('titulo')),
         body:  FutureBuilder<Post>( //estado inicial cargando y luego del primer if  o sale bien o mal
           future: fetchdata(),
           builder: (BuildContext context, AsyncSnapshot<Post> snapshot){
             if (snapshot.connectionState == ConnectionState.waiting){
             // mientra se espera mostrar el indicador o circulito de "Cargando".
-              return CircularProgressIndicator(); //poner el loading
+              return const CircularProgressIndicator(); //poner el loading
             } else if(snapshot.hasError){
               //si hay un error, mostrar mensaje avisando la situación.
               return Text('Error: ${snapshot.error}'); // retorna ErrorDato

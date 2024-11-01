@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   final String postId;
 
-  const MyHomePage({required this.postId});
+  const MyHomePage({super.key, required this.postId});
 
   Future<Post> fetchPost() async {
     final url = Uri.https('jsonplaceholder.typicode.com', '/posts/$postId');

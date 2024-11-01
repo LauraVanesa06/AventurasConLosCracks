@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       // polimorfismo se define variable d eun tipo padre y el objeto es de otro tipo hijo 
       title: 'Flutter Demo',
       home: Scaffold(
-        appBar: AppBar(title: Text('titulo')),
+        appBar: AppBar( title: Text('titulo')),
         body:  FutureBuilder<Post>( //estado inicial cargando y luego del primer if  o sale bien o mal
           future: fetchdata(),
           builder: (BuildContext context, AsyncSnapshot<Post> snapshot){

@@ -4,7 +4,7 @@ import 'package:flutter_application_1/widget/success.dart';
 import 'models/post.dart';
  
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

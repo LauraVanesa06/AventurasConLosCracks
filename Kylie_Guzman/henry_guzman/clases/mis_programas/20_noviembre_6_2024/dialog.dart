@@ -31,24 +31,24 @@ abstract class Button {
 class WindowsButton implements Button {
   @override
   void onClick() {
-    print('se activa en windows 1');
+    print('se activa onClick en windows 1');
   }
 
   @override
   void render() {
-    print('se activa en windows 2');
+    print('se activa render en windows 2');
   }
 }
 
 class HTMLButton implements Button {
   @override
   void onClick() {
-    print('se activa en HTML 1');
+    print('se activa onClick en HTML 1');
   }
 
   @override
   void render() {
-    print('se activa en HTML 2');
+    print('se activa render en HTML 2');
   }
 }
 

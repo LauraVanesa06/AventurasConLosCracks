@@ -48,5 +48,6 @@ void calculadora(){
       break;
     }
     print('el resultado de la operacion es $resultado');
+    print('hola mundo');
   }
 }

@@ -26,16 +26,16 @@ class Home extends StatelessWidget{
       body: FutureBuilder<Posts>(
       future: fetchData(), 
       builder: (BuildContext context,
-      AsyncSnapshot<Posts> snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Process();
-        }else if (snapshot.hasError) {
-          return const Error();
-        }else {
-          Posts p = snapshot.data!;
-          return Comienzo(posts: p,);
-        }
-      },
+        AsyncSnapshot<Posts> snapshot) {
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Process();
+          }else if (snapshot.hasError) {
+            return const Error();
+          }else {
+            Posts p = snapshot.data!;
+            return Comienzo(posts: p,);
+          }
+        },
       )
     );
   }

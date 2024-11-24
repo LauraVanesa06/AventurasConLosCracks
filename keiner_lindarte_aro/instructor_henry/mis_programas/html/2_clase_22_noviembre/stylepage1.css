@@ -1,0 +1,139 @@
+main{
+    width: 1300px;
+    height: 800px;
+    margin: auto;
+}
+header{
+    background-color: grey;
+    height: 150px;
+    border: 3px solid grey;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+nav{
+    background-color: #245324;
+    height: 100px;
+    margin: auto;
+    border: 3px solid #245324;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+section{
+    background-color: white;
+    height: 550px;
+}
+article{
+    background-color: #fffa99;
+    border: 3px solid #fffa99;
+    height: 250px;
+    width: 800px;
+    float: left;
+    padding-left: 30px;
+}
+.articulo1{
+    margin-top: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.articulo2{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+aside{
+    background-color: #4a6537;
+    border: 3px solid #4a6537;
+    height: 525px;
+    width: 450px;
+    margin-top: 20px;
+    float: right;
+    border-radius: 20px;
+} 
+footer{
+    background-color: #295a29;
+    margin-top: 20px;
+    height: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 3px solid #295a29;
+    padding-top: 10px;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img{
+    border: 3px solid black;
+    border-radius: 10px;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+    background-color: white;
+}
+.texthead1{
+    color: black;
+    padding-left: 50px;
+    padding-right: 70px;
+    font-size: 20px;
+    margin-left: 120px;
+    margin-right: 50px;
+}
+.texthead2{
+    
+    color: black;
+    padding-left: 50px;
+    padding-right: 70px;
+    font-size: 50px;
+    margin-left: 120px;
+    margin-right: 50px;
+}
+.textnav1{
+    color: white;
+    padding-left: 50px;
+    padding-right: 70px;
+    font-size: 30px;
+    display: inline-block;
+    border-right: 3px solid white;
+    margin-left: 90px;
+    margin-right: 50px;
+}
+.textnav2{
+    color: white;
+    padding-left: 20px;
+    padding-right: 70px;
+    font-size: 30px;
+    display: inline-block;
+    border-right: 3px solid white;
+    margin-right: 50px;
+}
+.textnav3{
+    color: white;
+    padding-left: 20px;
+    padding-right: 70px;
+    font-size: 30px;
+    display: inline-block;
+    border-right: 3px solid white;
+    margin-right: 50px;
+}
+.textnav4{
+    color: white;
+    padding-left: 20px;
+    padding-right: 70px;
+    font-size: 30px;
+    display: inline-block;
+}
+.tittlearticle1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left;
+    font-size: 30px;
+    width: 500px;
+}
+.textarticle1{
+    font-size: 23px;
+    width: 500px;
+}
+.textfooter{
+    color: white;
+    text-align: center;
+    line-height: 0.5;
+}

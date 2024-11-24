@@ -5,6 +5,8 @@ main{
 }
 header{
     background-color: rgb(182, 182, 182);
+    background-image: url(../2_clase_22_noviembre/img/texture.jpg);
+    background-size: 300px;
     height: 150px;
     border: 3px solid grey;
     border-top-left-radius: 20px;

@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 250px;
+}
+.logo{
+    background: url(IMG/logo.jpeg) no-repeat center center;
+    height: 180px;
+    width: 1349px;
+}
+.nav{
+    height: 70px;
+    background-color: rgb(32, 108, 52);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffff;
+    text-size-adjust: 25px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    color: #ffff;
+}
+.ancla{
+    color: #ffff;
+    text-size-adjust: 25px;
+}
+.ancla:hover{
+    color:rgb(22, 139, 22);
+    text-transform: uppercase;
+}
+.smadre{
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+.shija{
+    flex: 2;
+    height: 400px;
+    width: 790px;
+    padding: 5px;
+    margin: 5px 0 5px 5px;
+}
+.article{
+    background-color: rgba(240, 233, 92, 0.882);
+    height: 190px;
+    margin: 6px;
+    padding: 0px 10px 0 10px;
+}
+.ar1{
+    border-radius: 20px 20px 0 0;
+}
+.ar2{
+    border-radius: 0 0 20px 20px;
+}
+.teximg{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+h1{
+    height: 9px;
+    font-size: 20px;
+}
+.title{
+    height: 30px;
+    padding: 10px;
+}
+.p{
+    flex: 2;
+    height: 135px;
+    width: 800px;
+    padding: 10px;
+}
+.img{
+    flex: 1;
+}
+.imgh{
+    border-radius: 20px;
+    border: solid 2px #000;
+    margin: 0 10px 0 50px;
+}
+aside{
+    flex: 1;
+    height: 400px;
+    width: 450px;
+    padding: 5px;
+    margin: 5px 0 0 0;
+}
+.form{
+    height: 390px;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: rgba(5, 58, 20, 0.7);
+
+    
+}
+.form1{
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    margin: 0;
+}
+label {
+    color: #fff;
+}
+
+input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    
+}
+
+button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.h1f{
+    background-color: rgba(8, 39, 8, 0.82);
+    height: 40px;
+    border-radius: 20px 20px 0 0;
+    color: #ffff;
+    align-content: center;
+}
+.footer{
+    height: 100px;
+    background-color: rgb(32, 108, 52);
+    padding: 20px;
+    color: #fff;
+}

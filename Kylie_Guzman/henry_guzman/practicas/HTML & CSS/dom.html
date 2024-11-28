@@ -8,8 +8,6 @@
 </head>
 <body>
     <center>
-        <label for="photoId">Ingrese el ID de la foto: </label>
-        <input type="number" id="photoId" placeholder="ID (Ejemplo: 1)">
         <table>
             <tr>
                 <td><label for="">AlbumId</label></td>
@@ -33,9 +31,10 @@
             </tr>
         </table>
         <br>
-        <button onclick="cambiarInfo()" type="button">Buscar</button>
+    <label for="photoId">Ingrese el ID de la foto: </label>
+    <input type="number" id="fotoId" placeholder="Numero">
+    <button onclick="cambiarInfo()" type="button">buscar</button>
     </center>
-    <script src="dom.js">
-    </script>
+    <script src="dom.js"> </script>
 </body>
 </html>

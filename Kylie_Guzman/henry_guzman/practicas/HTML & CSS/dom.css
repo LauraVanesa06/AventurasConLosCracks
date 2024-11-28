@@ -9,6 +9,7 @@ td{
     padding: 10px;
 }
 button{
+    border-radius: 40px;
     background-color: white;
     width: 90px;
     height: 25px;

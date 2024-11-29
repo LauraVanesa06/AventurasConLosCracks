@@ -1,0 +1,93 @@
+.section5{
+    border: 1px solid grey;
+    height: 100px;
+}
+.section6{
+    height: 100px;
+    width: 80%;
+    border: 1px solid grey;
+    display: inline-block;
+}
+header{
+    height: 67px;
+    border: 1px solid grey; 
+}
+.nav3{
+    height: 28px;
+    border: 2px solid grey;    
+}
+img{
+    border: 1px solid pink;
+    height: 100px;
+    width: 100px;
+}
+.nav2{
+    height: 10px;
+    border: 1px solid black;
+}
+nav{
+    border: 1px solid yellow;
+    height: 40px;
+}
+.sectionMadre{
+    border: 1px solid green;
+    display: flex;
+}
+.section1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+section{
+    flex: 2;
+}
+.header2{
+    height: 27px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: rgb(226, 226, 226);
+    background-color: rgb(0, 36, 30);
+    border-radius: 20px 20px 0 0;
+}
+aside{
+    border:1px solid pink;
+    display: flex;
+    flex: 1;
+    margin-bottom: 20px;
+}
+.aside2{
+    border:1px solid blue;
+    display: flex;
+    flex: 1;
+}
+.section2{
+    margin-inline-start: 20px;
+    border: 1px solid salmon;
+}
+.section3, .section4{
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+.artc{
+    flex: 0 0 48%;
+    height: 220px;
+    border: 1px solid violet;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.heade1{
+    flex: 0 0 48%;
+    height: 30px;
+}
+footer{
+    height: 80px;
+    color: rgb(111, 163, 155);
+    background-color: rgb(9, 61, 52);
+}
+footer p {
+    margin: 0;
+    line-height: 1.0;
+}

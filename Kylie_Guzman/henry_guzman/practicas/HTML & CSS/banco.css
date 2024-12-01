@@ -39,7 +39,9 @@ nav{
     flex-direction: column;
 }
 section{
+    display: flex;
     flex: 2;
+    border: solid 1px red;
 }
 .header2{
     height: 27px;
@@ -62,25 +64,20 @@ aside{
     display: flex;
     flex: 1;
 }
-.section2{
-    margin-inline-start: 20px;
-    border: 1px solid salmon;
-}
-.section3, .section4{
-    border: 1px solid red;
-    display: flex;
-    flex-wrap: wrap;
-}
-.artc{
+.article1{
     flex: 0 0 48%;
+    width: 110px;
     height: 220px;
     border: 1px solid violet;
     box-sizing: border-box;
     display: inline-block;
 }
-.heade1{
+article{
     flex: 0 0 48%;
-    height: 30px;
+    width: 110px;
+    height: 220px;
+    border: 1px solid violet;
+    box-sizing: border-box;
 }
 footer{
     height: 80px;
